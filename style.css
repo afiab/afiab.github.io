@@ -1,0 +1,25 @@
+img {
+    width: 95%;
+    height: auto;
+    padding: auto;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    color: rgb(208, 0, 255);
+}
+
+h2 {
+    color: rgb(135, 55, 220);
+}
+
+a {
+    color: violet;
+}
+
+a:hover {
+    color: rgb(135, 55, 220);
+}
