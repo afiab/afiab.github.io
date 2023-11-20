@@ -1,25 +1,91 @@
-img {
-    width: 95%;
-    height: auto;
-    padding: auto;
+:root{
+    --black: #000000;
+    --lightpurple: #e4a6ff;
+    --purple: #B171FF;
+    --neutral: #E8D6CB;
+    --pink: #FF669C;
+    --blue: #32CBFF;
+    --light: #E3F7FD;
 }
 
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: var(--black);
 }
 
 h1 {
-    color: rgb(208, 0, 255);
+    color: var(--purple);
+    font-family: 'Pinyon Script', cursive;
+    font-size: 7em;
+    text-align: center;
+    text-shadow: var(--pink) 1px 0 10px;
 }
 
-h2 {
-    color: rgb(135, 55, 220);
+h1:hover{
+    text-shadow: var(--purple) 1px 0 10px;
 }
 
-a {
-    color: violet;
+h2{
+    color: var(--light);
+    font-family: 'Source Code Pro', monospace;
 }
 
-a:hover {
-    color: rgb(135, 55, 220);
+h2:hover{
+    color: var(--light);
+    font-family: 'Source Code Pro', monospace;
+    text-shadow: var(--lightpurple) 1px 0 10px;
+}
+
+p{
+    color: var(--neutral);
+    font-size: large;
+    padding-left: 3em;
+    padding-right: 1em;
+}
+
+a{
+    color:var(--purple);
+}
+
+a:hover{
+    color: var(--purple);
+    text-shadow: var(--pink) 1px 0 10px;
+}
+
+/* skills section */
+.indent{
+    padding-left: 5em;
+}
+
+.text{
+    color: var(--neutral);
+    font-size: large;
+    list-style-type: none;
+}
+
+/* navigation bar: */
+nav{
+    text-align: center;
+    background-color: var(--purple);
+    padding-top: .01em;
+    padding-bottom: .01em;
+}
+
+.nav{
+    display: inline;
+    padding: .5em;
+    text-align: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--black);
+    padding: 1.1em;
+    text-shadow: var(--pink) 1px 0 10px;
+}
+
+.nav a:hover{
+    background-color: var(--black);
+    color: var(--purple);
+    padding: 1.1em;
+    text-shadow: var(--pink) 1px 0 10px;
 }

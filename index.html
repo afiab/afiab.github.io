@@ -3,73 +3,95 @@
 
 <head>
 
-  <title> Afia's Personal Website</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- link the webpage's stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
+    <title> Afia Bidica</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- link the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- link to font used for h1 name -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+
+    <!-- link to font for h2 headers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <h1>Afia Bidica</h1>
+    <h1>Afia Bidica</h1>
 
-  <main>
+    <!-- Navigation Bar Here -->
+    <nav>
+        <ul>
+            <li class="nav"><a href="#AboutMe">About Me</a></li>
+            <li class="nav"><a href="#Skills">Skills</a></li>
+            <li class="nav"><a href="#Projects">Projects</a></li>
+            <li class="nav"><a href="#Links.html">Link Name</a></li>
+        </ul>
+    </nav>
 
-    <!-- this website is currently for a class assignment
-    but is subject to change in the future -->
-    <h2>About Me</h2>
-    <p>Hello! My name is Afia 
-        (which was probably obvious with the title above). 
-        I graduated from Stuyvesant High School in June 2023,
-        which was where I really started exploring software engineering.
-        In my free time, I like to 
-        read books, play games like Tetris or Project Sekai,
-        and work on random code projects. 
-        My favorite color is Purple,
-        and my favorite food is onigiri, pictured below 
-        (I really like the salmon and tuna ones).
-    </p>
 
-    <img 
-    src="https://www.allrecipes.com/thmb/RFpigljvRaJmCKYloZ9t2p3i-VA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/140422-onigiri-japanese-rice-balls-ddmfs-Beauty-3x4-1-aa650c90910247d086e22c57b8402367.jpg"
-    alt="Onigiri on a cutting board">
+    <main>
+        <!-- < is '&lt;' -->
+        <!-- > is '&gt;' -->
+        <!-- / is &bsol; -->
 
-    <h2>RIT Software Engineering</h2>
-    <p>Here is a link to the 
-        <a href="https://www.rit.edu/computing/department-software-engineering#scholarships">RIT Software Engineering</a>
-        website.
-    </p>
+        <!-- About Me (include socials) -->
+        <h2 id="AboutMe">&lt;<span style="color:var(--pink)">About Me</span>&gt;</h2>
+            <p>Hi, my name is Afia. If you couldn't tell by now, purple is my favorite color.
+                I'm a first year Software Engineering student at RIT. </p>
+        <h2>&lt;&sol;<span style="color:var(--pink)">About Me</span>&gt;</h2>
 
-    <h2>What I'd like to learn</h2>
-    <p>From this course I'd like to learn the following:</p>
-    <ul>
-        <li>How to navigate through the 
-            Software Engineering curriculum at RIT
-        </li>
-        <li>What are some online tools I can use to 
-            facilitate team software development
-        </li>
-        <li>
-            How to make an effective portfolio site and 
-            personal projects
-        </li>
-    </ul>
-    <p>Here's a numbered list since there was no specification of 
-        the desired list type:
-    </p>
-    <ol>
-        <li>I want to hear from more people who can provide
-            applicable advice for software engineering
-        </li>
-        <li>also tips on finding summer opportunities
-            because I literally can't find anything
-        </li>
-    </ol>
-  </main>
+        <!-- Languages and Dev Tools -->
+        <h2 id="Skills">&lt;<span style="color:var(--blue)">Skills</span>&gt;</h2>
+            <div id="skillsGroup">
+                <div class="flex" id="Languages">
+                    <p>Languages</p>
+                    <ul class="indent">
+                        <li class="text">Python</li>
+                        <li class="text">Java</li>
+                        <li class="text">JavaScript</li>
+                        <li class="text">Processing.py</li>
+                        <li class="text">Processing.java</li>
+                        <li class="text">p5.js and p5.play</li>
+                    </ul>
+                </div>
+
+                <div class="flex"id="DevTools">
+                    <p>Dev Tools</p>
+                    <ul class="indent">
+                        <li class="text">GitHub</li>
+                        <li class="text">VSCode</li>
+                        <li class="text">GitBash</li>
+                        <li class="text">WSL</li>
+                    </ul>
+                </div>
+            </div>
+        <h2>&lt;&sol;<span style="color:var(--blue)">Skills</span>&gt;</h2>
+
+        <!-- Projects -->
+        <h2 id="Projects">&lt;<span style="color:var(--purple)">Projects</span>&gt;</h2>
+            <!-- GitHub Link is placeholder, I will list out the projects later -->
+            <p>Please refer to my GitHub Page: <a href="https://github.com/afiab">Click Here</a></p>
+            <p>Projects will be listed out in the future</p>
+        <h2>&lt;&sol;<span style="color:var(--purple)">Projects</span>&gt;</h2>
+
+        <!-- Contact -->
+        <h2 id="Links">&lt;<span style="color:var(--lightpurple)">Links</span>&gt;</h2>
+            <!-- GitHub Link is placeholder, I will list out the projects later -->
+            <p><a href="https://github.com/afiab">GitHub Page</a></p>
+            <p><a href="https://www.linkedin.com/in/afia-bidica/">LinkedIn</a></p>
+        <h2>&lt;&sol;<span style="color:var(--lightpurple)">Links</span>&gt;</h2>
+
+    </main>
 
 </body>
 
