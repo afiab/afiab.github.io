@@ -1,7 +1,7 @@
 // Function to fetch JSON data
-async function fetchImages() {
+async function fetchImages(filepath) {
     try {
-        const response = await fetch('personalProjs.json');
+        const response = await fetch(filepath);
         const imagesData = await response.json();
         return imagesData;
     } catch (error) {
@@ -12,8 +12,8 @@ async function fetchImages() {
 
 // Function to populate sliders
 async function populateSliders() {
-    const imagesData = await fetchImages();
-    const slider1 = document.getElementById('slider1');
+    const imagesData = await fetchImages('./jsonfiles/personalProjs.json');
+    const slider1 = document.getElementById('sliderproj');
 
     imagesData.forEach((item, index) => {
         const div = document.createElement('div');
