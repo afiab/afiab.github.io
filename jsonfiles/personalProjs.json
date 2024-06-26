@@ -1,14 +1,17 @@
 [
     {
         "url": "./images/FolderCleanup.png",
-        "link": "https://github.com/afiab/folder-cleanup"
+        "link": "https://github.com/afiab/folder-cleanup",
+        "text": "Folder Cleanup"
     },
     {
         "url": "./images/RitchievsBricky.jpg",
-        "link": "https://github.com/afiab/Ritchie-vs-Bricky"
+        "link": "https://github.com/afiab/Ritchie-vs-Bricky",
+        "text": "Ritchie vs Bricky"
     },
     {
         "url": "./images/Flashcard.png",
-        "link": "https://github.com/afiab/flashcard"
+        "link": "https://github.com/afiab/flashcard",
+        "text": "Flashcard"
     }
 ]

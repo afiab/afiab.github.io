@@ -10,39 +10,49 @@ async function fetchImages(filepath) {
     }
 }
 
+// Function to create image elements with overlay text and links
+function createImageElement(item, index) {
+    const div = document.createElement('div');
+    div.classList.add('item');
+    div.style.setProperty('--position', index + 1);
+
+    const link = document.createElement('a');
+    link.href = item.link;
+
+    const img = document.createElement('img');
+    img.src = item.url;
+    img.alt = '';
+
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+
+    const text = document.createElement('div');
+    text.classList.add('text');
+    text.textContent = item.text;
+
+    overlay.appendChild(text);
+    link.appendChild(img);
+    link.appendChild(overlay);
+    div.appendChild(link);
+
+    return div;
+}
+
 // Function to populate sliders
 async function populateSliders() {
-    const projsData = await fetchImages('./jsonfiles/personalProjs.json');
+    const personalProjsData = await fetchImages('./jsonfiles/personalProjs.json');
     const sliderproj = document.getElementById('sliderproj');
 
-    projsData.forEach((item, index) => {
-        const div = document.createElement('div');
-        div.classList.add('item');
-        div.style.setProperty('--position', index + 1);
-        const img = document.createElement('img');
-        img.src = item.url;
-        img.alt = '';
-        const link = document.createElement('a');
-        link.href = item.link;
-        link.appendChild(img);
-        div.appendChild(link);
+    personalProjsData.forEach((item, index) => {
+        const div = createImageElement(item, index);
         sliderproj.appendChild(div);
     });
 
-    const hackData = await fetchImages('./jsonfiles/hackProjs.json');
+    const hackProjsData = await fetchImages('./jsonfiles/hackProjs.json');
     const sliderhack = document.getElementById('sliderhack');
 
-    projsData.forEach((item, index) => {
-        const div = document.createElement('div');
-        div.classList.add('item');
-        div.style.setProperty('--position', index + 1);
-        const img = document.createElement('img');
-        img.src = item.url;
-        img.alt = '';
-        const link = document.createElement('a');
-        link.href = item.link;
-        link.appendChild(img);
-        div.appendChild(link);
+    hackProjsData.forEach((item, index) => {
+        const div = createImageElement(item, index);
         sliderhack.appendChild(div);
     });
 }
