@@ -12,25 +12,38 @@ async function fetchImages(filepath) {
 
 // Function to populate sliders
 async function populateSliders() {
-    const imagesData = await fetchImages('./jsonfiles/personalProjs.json');
-    const slider1 = document.getElementById('sliderproj');
+    const projsData = await fetchImages('./jsonfiles/personalProjs.json');
+    const sliderproj = document.getElementById('sliderproj');
 
-    imagesData.forEach((item, index) => {
+    projsData.forEach((item, index) => {
         const div = document.createElement('div');
         div.classList.add('item');
         div.style.setProperty('--position', index + 1);
-
         const img = document.createElement('img');
         img.src = item.url;
         img.alt = '';
-
         const link = document.createElement('a');
         link.href = item.link;
         link.appendChild(img);
-        
         div.appendChild(link);
+        sliderproj.appendChild(div);
+    });
 
-        slider1.appendChild(div);
+    const hackData = await fetchImages('./jsonfiles/hackProjs.json');
+    const sliderhack = document.getElementById('sliderhack');
+
+    projsData.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.classList.add('item');
+        div.style.setProperty('--position', index + 1);
+        const img = document.createElement('img');
+        img.src = item.url;
+        img.alt = '';
+        const link = document.createElement('a');
+        link.href = item.link;
+        link.appendChild(img);
+        div.appendChild(link);
+        sliderhack.appendChild(div);
     });
 }
 
