@@ -1,98 +1,65 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Afia Bidica</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- link the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- link to font used for h1 name -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
-
-    <!-- link to font for h2 headers -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Source+Code+Pro&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- nav bar header here -->
+    <header>
+        <div class="header-left">
+            <h1>Afia Bidica</h1> 
+        </div>
+        <nav class="header-right">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Socials">Socials</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Afia Bidica</h1>
+    <!-- welcome -->
+    <h1 class="section" id="Home">Welcome!</h1>
+    <!-- some text about me, experience, school major/minor hackathons, careers etc -->
+    <p>Currently in progress, come back later or check out my <a href="https://github.com/afiab">github</a></p>
+    <br>
 
-    <!-- Navigation Bar Here -->
-    <nav>
-        <ul>
-            <li class="nav"><a href="#AboutMe">About Me</a></li>
-            <li class="nav"><a href="#Skills">Skills</a></li>
-            <li class="nav"><a href="#Projects">Projects</a></li>
-            <li class="nav"><a href="#Links.html">Links</a></li>
-        </ul>
-    </nav>
+    <!-- skills section -->
+    <h1 id="Skills">Skills</h1>
+    <!-- try horizontal autoscroll here -->
+    <br>
 
+    <!-- prjs here -->
+    <h1 id='Projects'>Projects</h1>
+    <br>
+    <!-- Slider credit: LunDev https://youtu.be/mF9yOwlunWk?si=SFpxVKe5YAjgiboR -->
+    <!-- slider example -->
+    <h2>Personal Projects</h2>
+    <div class="slider" style="
+        --width: 250px; 
+        --height: 250px; 
+        --quantity: 3;
+    ">
+        <div class="list" id="slider1"></div>
+    </div>
+    <!-- Hackathons -->
+    <h2>Hackathons</h2>
+    <div class="slider" reverse="true" style="
+        --width: 200px; 
+        --height: 200px; 
+        --quantity: 9;
+    ">
+        <div class="list" id="sliderproj"></div>
+    </div>
+    <!-- 202x or before -->
 
-    <main>
-        <!-- < is '&lt;' -->
-        <!-- > is '&gt;' -->
-        <!-- / is &bsol; -->
+    <!-- socials -->
+    <h1 id="Socials">Socials</h1>
 
-        <!-- About Me (include socials) -->
-        <h2 id="AboutMe">&lt;<span style="color:var(--pink)">About Me</span>&gt;</h2>
-            <p>Hi, my name is Afia. If you couldn't tell by now, purple is my favorite color.
-                I'm a first year Software Engineering student at RIT. </p>
-        <h2>&lt;&sol;<span style="color:var(--pink)">About Me</span>&gt;</h2>
-
-        <!-- Languages and Dev Tools -->
-        <h2 id="Skills">&lt;<span style="color:var(--blue)">Skills</span>&gt;</h2>
-            <div id="skillsGroup">
-                <div class="flex" id="Languages">
-                    <p>Languages</p>
-                    <ul class="indent">
-                        <li class="text">Python</li>
-                        <li class="text">Java</li>
-                        <li class="text">JavaScript</li>
-                        <li class="text">Processing.py</li>
-                        <li class="text">Processing.java</li>
-                        <li class="text">p5.js and p5.play</li>
-                    </ul>
-                </div>
-
-                <div class="flex"id="DevTools">
-                    <p>Dev Tools</p>
-                    <ul class="indent">
-                        <li class="text">GitHub</li>
-                        <li class="text">VSCode</li>
-                        <li class="text">GitBash</li>
-                        <li class="text">WSL</li>
-                    </ul>
-                </div>
-            </div>
-        <h2>&lt;&sol;<span style="color:var(--blue)">Skills</span>&gt;</h2>
-
-        <!-- Projects -->
-        <h2 id="Projects">&lt;<span style="color:var(--purple)">Projects</span>&gt;</h2>
-            <!-- GitHub Link is placeholder, I will list out the projects later -->
-            <p>Please refer to my GitHub Page: <a href="https://github.com/afiab">Click Here</a></p>
-            <p>Projects will be listed out in the future</p>
-        <h2>&lt;&sol;<span style="color:var(--purple)">Projects</span>&gt;</h2>
-
-        <!-- Contact -->
-        <h2 id="Links">&lt;<span style="color:var(--lightpurple)">Links</span>&gt;</h2>
-            <!-- GitHub Link is placeholder, I will list out the projects later -->
-            <p><a href="https://github.com/afiab">GitHub Page</a></p>
-            <p><a href="https://www.linkedin.com/in/afia-bidica/">LinkedIn</a></p>
-        <h2>&lt;&sol;<span style="color:var(--lightpurple)">Links</span>&gt;</h2>
-
-    </main>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
