@@ -35,7 +35,7 @@ header {
 }
 
 .header-right ul li {
-    margin-left: 20px; /* Adjust spacing between menu items */
+    margin-left: 10px; /* Adjust spacing between menu items */
 }
 
 .header-right ul li:first-child {
