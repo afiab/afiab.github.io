@@ -53,6 +53,10 @@ body{
     background-color: #e5e5e5;
 }
 
+.content {
+    padding: 15px;
+}
+
 img {
     width: auto;
     height: 100%;
