@@ -174,3 +174,22 @@ main{
     font-size: 20px;
     text-align: center;
 }
+
+/* resume button */
+#resumeButton {
+    background-color: #333; /* Blue background */
+    color: #fff; /* White text color */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded border */
+    cursor: pointer; /* Cursor style */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px; /* Margin around the button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#resumeButton:hover {
+    background-color: #555; /* Darker blue background */
+    color: #fff; /* White text color remains */
+}
+/* end of resume button */
