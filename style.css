@@ -13,6 +13,10 @@ h2 {
     margin: 20px;
 }
 
+p {
+    margin: 15px;
+}
+
 /* Basic styles for header */
 header {
     display: flex;
