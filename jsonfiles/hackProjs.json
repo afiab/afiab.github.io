@@ -1,17 +1,22 @@
 [
     {
-        "url": "./images/FolderCleanup.png",
-        "link": "https://github.com/afiab/folder-cleanup",
-        "text": "Folder Cleanup"
-    },
-    {
         "url": "./images/RitchievsBricky.jpg",
         "link": "https://github.com/afiab/Ritchie-vs-Bricky",
         "text": "Ritchie vs Bricky"
     },
     {
-        "url": "./images/Flashcard.png",
-        "link": "https://github.com/afiab/flashcard",
-        "text": "Flashcard"
+        "url": "./images/Spotiverse.jpg",
+        "link": "https://afiab.github.io/spotiverse/",
+        "text": "Spotiverse"
+    },
+    {
+        "url": "./images/Ambulert.jpg",
+        "link": "https://ambulert.glitch.me/",
+        "text": "Ambulert"
+    },
+    {
+        "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/587/083/datas/gallery.jpg",
+        "link": "https://devpost.com/software/schedule-maker-bpj9d1",
+        "text": "Schedule Visualizer"
     }
 ]
