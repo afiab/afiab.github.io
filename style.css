@@ -5,8 +5,12 @@
     box-sizing: border-box;
 }
 
+.section {
+    margin: 10px;
+}
+
 h2 {
-    padding: 20px;
+    margin: 20px;
 }
 
 /* Basic styles for header */
