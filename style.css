@@ -7,6 +7,7 @@
 
 .section {
     margin: 10px;
+    scroll-margin-top: 80px;
 }
 
 h2 {
