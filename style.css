@@ -5,6 +5,7 @@
     --three: #D8D0DC;
     --four: #82688D;
     --five: #201A23;
+    --lowOpacity: rgba(66, 27, 87, 0.5);
     /* other color vars */
     --sectionColor: var(--three);
     --buttonNorm: var(--four);
@@ -153,7 +154,6 @@ main{
     filter: grayscale(1);
     transition: transform .2s; /* Animation */
 }
-
 /* focused slide elements */
 .slider .item:hover{
     filter: grayscale(0);
@@ -194,7 +194,7 @@ main{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.5); /* Change the background color and opacity as needed */
+    background-color: var(--lowOpacity); /* Change the background color and opacity as needed */
     display: flex;
     justify-content: center;
     align-items: center;
