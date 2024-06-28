@@ -28,7 +28,7 @@ function createImageElement(item, index) {
 
     const text = document.createElement('div');
     text.classList.add('text');
-    text.textContent = item.text;
+    text.textContent = item.text + ' \u2197';
 
     overlay.appendChild(text);
     link.appendChild(img);

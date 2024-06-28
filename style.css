@@ -1,3 +1,12 @@
+:root {
+    /* introducing vars */
+    --buttonNorm: #333;
+    --buttonHover: #555;
+    --buttonText: #fff;
+    --background: #e5e5e5;
+    --border: 5px;
+}
+
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -23,7 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333; /* Adjust background color as needed */
+    background-color: var(--buttonNorm); /* Adjust background color as needed */
     padding: 10px 20px; /* Adjust padding as needed */
     color: #fff; /* Text color for header */
     position: sticky;
@@ -49,20 +58,20 @@ header {
 
 .header-right ul li a {
     text-decoration: none;
-    color: #fff; /* Link color */
+    color: var(--buttonText); /* Link color */
     font-weight: bold; /* Optional: Adjust font weight */
     padding: 5px 10px; /* Optional: Adjust padding for each link */
 }
 
 .header-right ul li a:hover {
     /* Optional: Add hover effect */
-    background-color: #555; /* Adjust hover background color */
-    border-radius: 5px; /* Optional: Rounded corners on hover */
+    background-color: var(--buttonHover); /* Adjust hover background color */
+    border-radius: var(--border); /* Optional: Rounded corners on hover */
 }
 
 body{
     margin: 0;
-    background-color: #e5e5e5;
+    background-color: var(--background);
 }
 
 .content {
@@ -182,10 +191,10 @@ main{
 
 /* resume button */
 #resumeButton {
-    background-color: #333; /* Blue background */
-    color: #fff; /* White text color */
+    background-color: var(--buttonNorm); /* Blue background */
+    color: var(--buttonText); /* White text color */
     padding: 10px 15px; /* Padding inside the button */
-    border-radius: 5px; /* Rounded border */
+    border-radius: var(--border); /* Rounded border */
     cursor: pointer; /* Cursor style */
     font-size: 16px;
     font-weight: bold;
@@ -194,7 +203,7 @@ main{
 }
 
 #resumeButton:hover {
-    background-color: #555; /* Darker blue background */
-    color: #fff; /* White text color remains */
+    background-color: var(--buttonHover); /* Darker blue background */
+    color: var(--buttonText); /* White text color remains */
 }
 /* end of resume button */
