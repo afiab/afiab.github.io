@@ -207,3 +207,14 @@ main{
     color: var(--buttonText); /* White text color remains */
 }
 /* end of resume button */
+
+/* resume link in nav bar */
+#resumeLink {
+    background-color: var(--buttonHover);
+    border-radius: var(--border);
+}
+
+#resumeLink:hover {
+    background-color: var(--buttonText);
+    color: var(--buttonHover)
+}
