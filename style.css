@@ -1,13 +1,19 @@
 :root {
-    /* introducing vars */
-    --sectionColor: #FFFCF9;
-    --buttonNorm: #82688D;
-    --buttonHover: #201A23;
-    --buttonText: #F6D4D3;
-    --background: #201A23;
+    /* colors */
+    --one: #F6D4D3;
+    --two: #FFFCF9;
+    --three: #D8D0DC;
+    --four: #82688D;
+    --five: #201A23;
+    /* other color vars */
+    --sectionColor: var(--three);
+    --buttonNorm: var(--four);
+    --buttonHover: var(--five);
+    --buttonText: var(--one);
+    --background: var(--five);
+    /* other vars general */
     --border: 5px;
-    --fontCursive:'Brush Script MT', cursive;
-    --fontTyped: 'Courier New', monospace;
+    --fontDisplay: "Titillium Web", sans-serif;
 }
 
 /* Reset default margin and padding */
@@ -21,11 +27,12 @@
     margin: 10px;
     scroll-margin-top: 80px;
     color: var(--sectionColor);
+    font-family: var(--fontDisplay);
 }
 
 h2 {
     margin: 20px;
-    color: var(--sectionColor);
+    color: var(--one);
 }
 
 p {
@@ -81,6 +88,11 @@ body{
 
 .content {
     padding: 15px;
+    color: var(--buttonText)
+}
+
+.content a {
+    color: var(--three)
 }
 
 img {
@@ -134,11 +146,15 @@ main{
         left: calc(var(--width) * -1);
     }
 }
+
+/* unfocused slide elements */
 .slider:hover .item{
     animation-play-state: paused!important;
     filter: grayscale(1);
     transition: transform .2s; /* Animation */
 }
+
+/* focused slide elements */
 .slider .item:hover{
     filter: grayscale(0);
     transform: scale(1.05);
@@ -224,3 +240,4 @@ main{
     background-color: var(--buttonHover);
     color: var(--buttonText)
 }
+/* end of resume link in nav bar */
