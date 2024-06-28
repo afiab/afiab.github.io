@@ -1,10 +1,13 @@
 :root {
     /* introducing vars */
-    --buttonNorm: #333;
-    --buttonHover: #555;
-    --buttonText: #fff;
-    --background: #e5e5e5;
+    --sectionColor: #FFFCF9;
+    --buttonNorm: #82688D;
+    --buttonHover: #201A23;
+    --buttonText: #F6D4D3;
+    --background: #201A23;
     --border: 5px;
+    --fontCursive:'Brush Script MT', cursive;
+    --fontTyped: 'Courier New', monospace;
 }
 
 /* Reset default margin and padding */
@@ -17,10 +20,12 @@
 .section {
     margin: 10px;
     scroll-margin-top: 80px;
+    color: var(--sectionColor);
 }
 
 h2 {
     margin: 20px;
+    color: var(--sectionColor);
 }
 
 p {
@@ -34,7 +39,7 @@ header {
     align-items: center;
     background-color: var(--buttonNorm); /* Adjust background color as needed */
     padding: 10px 20px; /* Adjust padding as needed */
-    color: #fff; /* Text color for header */
+    color: var(--buttonText); /* Text color for header */
     position: sticky;
     top: 0;
     z-index: 1000; /* Ensure it stays above other content */
@@ -210,11 +215,12 @@ main{
 
 /* resume link in nav bar */
 #resumeLink {
-    background-color: var(--buttonHover);
+    background-color: var(--buttonText);
+    color: var(--buttonNorm);
     border-radius: var(--border);
 }
 
 #resumeLink:hover {
-    background-color: var(--buttonText);
-    color: var(--buttonHover)
+    background-color: var(--buttonHover);
+    color: var(--buttonText)
 }
