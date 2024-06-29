@@ -62,7 +62,7 @@ header {
 }
 
 .header-right ul li {
-    margin-left: 10px; /* Adjust spacing between menu items */
+    margin-left: 7px; /* Adjust spacing between menu items */
 }
 
 .header-right ul li:first-child {
@@ -244,7 +244,7 @@ main{
 
 /* mobile layout */
 @media screen and (max-width: 601px) {
-    /* i used width 360 - 600 pixels for mobile */
+    /* i used width 342 - 600 pixels for mobile */
     header {
         flex-direction: column;
         padding: 3%;
