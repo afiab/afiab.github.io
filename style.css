@@ -15,6 +15,7 @@
     /* other vars general */
     --border: 5px;
     --fontDisplay: "Titillium Web", sans-serif;
+    --fontTimes: "Times New Roman", Times, serif;
 }
 
 /* Reset default margin and padding */
@@ -94,6 +95,28 @@ body{
 
 .content a {
     color: var(--three)
+}
+
+/* make Home font large and center */
+#Home {
+    font-size: 500%;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+#name {
+    font-family: var(--fontTimes);
+    font-size: larger;
+}
+
+/* hover effect on my name */
+#name:hover {
+    color: var(--one);
+    font-size: 125%;
+    transition: transform .2s;
 }
 
 img {
