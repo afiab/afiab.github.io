@@ -326,3 +326,32 @@ main{
     transform: translateX(0);
 }
 /* end of css from https://youtu.be/T33NN_pPeNI */
+
+/* social icons */
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* delay each social icon by 100ms more for staggering effect */
+#social1 {
+    transition-delay: 100ms;
+}
+
+#social2 {
+    transition-delay: 200ms;
+}

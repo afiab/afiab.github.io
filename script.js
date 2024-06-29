@@ -17,7 +17,9 @@ function createImageElement(item, index) {
     div.style.setProperty('--position', index + 1);
 
     const link = document.createElement('a');
+    link.target = "_blank"; //open link in new tab
     link.href = item.link;
+    link.rel = "noopener noreferrer";
 
     const img = document.createElement('img');
     img.src = item.url;
