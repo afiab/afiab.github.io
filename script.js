@@ -59,3 +59,16 @@ async function populateSliders() {
 
 // Call populateSliders function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', populateSliders);
+
+// Home section scroll animation
+// Code mostly from this tutorial: https://youtu.be/T33NN_pPeNI
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        entry.target.classList.toggle('show', entry.isIntersecting);
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+//end of code from https://youtu.be/T33NN_pPeNI

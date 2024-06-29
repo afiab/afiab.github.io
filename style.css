@@ -303,3 +303,26 @@ main{
     
     /* reformat slider? */
 }
+
+
+/* home section scroll animation */
+/* css mostly from https://youtu.be/T33NN_pPeNI */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion){
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+/* end of css from https://youtu.be/T33NN_pPeNI */
