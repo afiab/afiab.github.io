@@ -30,6 +30,7 @@
     scroll-margin-top: 80px;
     color: var(--sectionColor);
     font-family: var(--fontDisplay);
+    font-size: 300%;
 }
 
 h2 {
@@ -101,10 +102,9 @@ body{
 #Home {
     font-size: 500%;
     text-align: center;
-    padding: auto;
     margin: auto;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 30%;
+    padding-bottom: 40%;
 }
 
 #name {
@@ -292,6 +292,11 @@ main{
         padding: 2%;
     }
     
+    #Home {
+        padding-top: 15vh;
+        padding-bottom: 25vh;
+    }
+
     img {
         width: 100%;
         height: auto;
