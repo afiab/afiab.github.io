@@ -139,6 +139,8 @@ main{
     width: 100%;
     height: var(--height);
     overflow: hidden;
+    margin-top: 5vh;
+    margin-bottom: 5vh; 
     mask-image: linear-gradient(
         to right,
         transparent,
