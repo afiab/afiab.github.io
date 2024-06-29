@@ -110,11 +110,12 @@ body{
 #name {
     font-family: var(--fontTimes);
     font-size: larger;
+    color: var(--one)
 }
 
 /* hover effect on my name */
 #name:hover {
-    color: var(--one);
+    color: var(--two);
     font-size: 125%;
     transition: transform .2s;
 }
