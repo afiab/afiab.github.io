@@ -115,7 +115,7 @@ body{
 /* hover effect on my name */
 #name:hover {
     color: var(--two);
-    font-size: 121%; 
+    font-size: 101%; 
     transition: transform .2s;
 }
 
