@@ -241,3 +241,42 @@ main{
     color: var(--buttonText)
 }
 /* end of resume link in nav bar */
+
+/* mobile layout */
+@media screen and (max-width: 601px) {
+    /* i used width 360 - 600 pixels for mobile */
+    header {
+        flex-direction: column;
+        padding: 3%;
+    }
+    
+    .header-right ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 4%;
+        padding-bottom: 2%;
+    }
+
+    .section {
+        scroll-margin-top: 120px;
+    }
+    
+    main {
+        width: 90%;
+        margin: auto;
+        padding: 2%;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+    
+    .slider .list {
+        scroll-behavior: smooth; /* Smooth scrolling */
+    }
+    
+    /* reformat slider? */
+}
