@@ -55,6 +55,11 @@ header {
     z-index: 1000; /* Ensure it stays above other content */
 }
 
+header a {
+    text-decoration: none;
+    color: var(--one);
+}
+
 /* Navigation links styling */
 .header-right ul {
     list-style-type: none;
