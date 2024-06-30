@@ -88,8 +88,13 @@ body{
     margin: 0;
     background-color: var(--background);
     background-image: url("images/Background.png");
-    background-size: 400px;
+    background-size: 50vh;
     background-repeat: repeat;
+    max-height: 500px;
+
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .content {
@@ -312,6 +317,9 @@ main{
         scroll-behavior: smooth; /* Smooth scrolling */
     }
     
+    body {
+        background-attachment: scroll;
+    }
     /* reformat slider? */
 }
 
