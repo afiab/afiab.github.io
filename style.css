@@ -87,15 +87,18 @@ header {
 body{
     margin: 0;
     background-color: var(--background);
+    background-image: url("images/Background.png");
+    background-size: 400px;
+    background-repeat: repeat;
 }
 
 .content {
     padding: 15px;
-    color: var(--buttonText)
+    color: var(--buttonText);
 }
 
 .content a {
-    color: var(--three)
+    color: var(--three);
 }
 
 /* make Home font large and center */
