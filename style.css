@@ -27,7 +27,7 @@
 
 .section {
     margin: 10px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 90px;
     color: var(--sectionColor);
     font-family: var(--fontDisplay);
     font-size: 300%;
@@ -36,6 +36,15 @@
 h2 {
     margin: 20px;
     color: var(--one);
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-wrap: wrap;
+    font-family: monospace;
 }
 
 p {
@@ -114,6 +123,7 @@ body{
     margin: auto;
     padding-top: 15%;
     padding-bottom: 15%;
+    transition-delay: 100ms;
 }
 
 #name {
@@ -126,6 +136,17 @@ body{
     color: var(--two);
     font-size: 101%; 
     transition: transform .2s;
+}
+
+.aboutlink { 
+    /* for the word Contact in about section */
+    color: var(--one);
+    text-decoration: none;
+}
+
+.aboutlink:hover {
+    color: var(--three);
+    text-decoration: none;
 }
 
 img {
@@ -293,6 +314,21 @@ main{
         padding-bottom: 2%;
     }
 
+    .header-right ul li {
+        margin-left: 1vw; /* Adjust spacing between menu items */
+    }
+    
+    .header-right ul li:first-child {
+        margin-left: 0; /* Remove margin for the first item */
+    }
+    
+    .header-right ul li a {
+        text-decoration: none;
+        color: var(--buttonText); /* Link color */
+        font-weight: bold; /* Optional: Adjust font weight */
+        padding: 1vh 1vw; /* Optional: Adjust padding for each link */
+    }
+
     .section {
         scroll-margin-top: 120px;
     }
@@ -376,3 +412,33 @@ main{
 #social2 {
     transition-delay: 200ms;
 }
+
+/* typewriter effect section */
+.typewriter-container {
+    font-family: monospace;
+    white-space: nowrap;
+    display: inline-block;
+    transition-delay: 100ms
+}
+
+#typewriter {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.caret {
+    display: inline-block;
+    width: 0.1em;
+    background-color: transparent;
+    margin-left: 0.1em;
+    animation: blink-caret 0.75s step-end infinite;
+    vertical-align: bottom;
+}
+
+@keyframes blink-caret {
+    from, to { background-color: transparent; }
+    50% { background-color: var(--one); }
+}
+
+/* typewriter effect section */

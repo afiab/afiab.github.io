@@ -74,3 +74,40 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 //end of code from https://youtu.be/T33NN_pPeNI
+
+// typewriter effect
+const texts = ["Afia Bidica", "a Python enthusiast", "a Software Engineering student", "a Hackathon enjoyer", "woman of color in computing"];
+let currentText = 0;
+let charIndex = 0;
+const typingSpeed = 75;
+const erasingSpeed = 50;
+const delayBetweenTexts = 2000;
+
+const typewriterElement = document.getElementById("typewriter");
+
+function type() {
+    if (charIndex < texts[currentText].length) {
+        typewriterElement.textContent += texts[currentText].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+    } else {
+        setTimeout(erase, delayBetweenTexts);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        typewriterElement.textContent = texts[currentText].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingSpeed);
+    } else {
+        currentText = (currentText + 1) % texts.length;
+        setTimeout(type, typingSpeed);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(type, typingSpeed);
+});
+
+// end typewriter effect
