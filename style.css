@@ -112,10 +112,6 @@ body{
     color: var(--buttonText);
 }
 
-.content a {
-    color: var(--three);
-}
-
 /* make Home font large and center */
 #Home {
     font-size: 200%;
@@ -142,6 +138,7 @@ body{
     /* for the word Contact in about section */
     color: var(--one);
     text-decoration: none;
+    font-style: italic;
 }
 
 .aboutlink:hover {
