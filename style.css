@@ -311,6 +311,10 @@ main{
 /* mobile layout */
 @media screen and (max-width: 769px) {
     /* i used width 342 - 768 pixels for mobile */
+    .homesechide {
+        color: transparent;
+    }
+
     header {
         flex-direction: column;
         padding: 3%;

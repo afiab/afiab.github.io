@@ -115,3 +115,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // end typewriter effect
+
+// wierd mobile glitch
+function toggleHomeSecClass() {
+    // Check screen width
+    if (window.innerWidth < 769) {
+        // Get the header element
+        const header = document.querySelector('#PersProjs');
+
+        // Calculate the position of the header relative to the bottom of the screen
+        const headerBottom = header.getBoundingClientRect().bottom;
+
+        // Get all elements with class 'homesec'
+        const homeSecElements = document.querySelectorAll('.homesec');
+
+        // Loop through each element and add/remove class based on header position
+        homeSecElements.forEach(element => {
+            if (headerBottom < window.innerHeight) {
+                // Header is above the bottom of the screen
+                element.classList.add('homesechide');
+            } else {
+                // Header is not above the bottom of the screen
+                element.classList.remove('homesechide');
+            }
+        });
+    }
+}
+
+// Attach an event listener to check when the window is resized or scrolled
+window.addEventListener('resize', toggleHomeSecClass);
+window.addEventListener('scroll', toggleHomeSecClass);
+
+// Initial call to set initial state based on current screen size
+toggleHomeSecClass();
