@@ -17,7 +17,7 @@ function createImageElement(item, index) {
     div.style.setProperty('--position', index + 1);
 
     const link = document.createElement('a');
-    link.target = "_blank"; // Open link in new tab
+    link.target = "_blank"; //open link in new tab
     link.href = item.link;
     link.rel = "noopener noreferrer";
 
@@ -62,54 +62,18 @@ async function populateSliders() {
 // Call populateSliders function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', populateSliders);
 
-// Function to check the position of the elements and toggle the 'show' class
-function checkPosition() {
-    const viewportWidth = window.innerWidth;
-    const hiddenElements = document.querySelectorAll('.hidden');
-
-    if (viewportWidth < 768) {
-        const viewportHeight = window.innerHeight;
-        const thresholdTop = 100; // 100px from the top of the viewport
-        const thresholdBottom = viewportHeight; // Bottom of the viewport
-
-        hiddenElements.forEach(target => {
-            const rect = target.getBoundingClientRect();
-
-            // Check if the element has the 'home' class
-            const hasHomeClass = target.classList.contains('home');
-
-            // Calculate if the element is within the visible range and not 'home'
-            const isVisible = rect.top >= thresholdTop && rect.bottom <= thresholdBottom;
-
-            if (isVisible || hasHomeClass) {
-                target.classList.add('show');
-            } else {
-                target.classList.remove('show');
-            }
-        });
-    } else {
-        // For viewport width >= 768px, show all elements with class 'hidden'
-        hiddenElements.forEach(el => el.classList.add('show'));
-    }
-}
-
-// Attach the scroll event listener to the window if viewport width is less than 768px
-const viewportWidth = window.innerWidth;
-if (viewportWidth < 768) {
-    window.addEventListener('scroll', checkPosition);
-}
-
-// Initial check on page load if viewport width is less than 768px
-document.addEventListener('DOMContentLoaded', () => {
-    if (viewportWidth < 768) {
-        checkPosition();
-    } else {
-        // For viewport width >= 768px, show all elements with class 'hidden'
-        const hiddenElements = document.querySelectorAll('.hidden');
-        hiddenElements.forEach(el => el.classList.add('show'));
-    }
+// Home section scroll animation
+// Code mostly from this tutorial: https://youtu.be/T33NN_pPeNI
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        entry.target.classList.toggle('show', entry.isIntersecting);
+    });
 });
 
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+//end of code from https://youtu.be/T33NN_pPeNI
 
 // typewriter effect
 const texts = ["Afia Bidica", "a Python enthusiast", "a Software Engineering student", "a Hackathon enjoyer", "a woman of color in computing"];
