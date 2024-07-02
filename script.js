@@ -30,7 +30,11 @@ function createImageElement(item, index) {
 
     const text = document.createElement('div');
     text.classList.add('text');
-    text.textContent = item.text + ' \u2197';
+    if (window.innerWidth > 768) {
+        text.textContent = item.text + ' \u2197';
+    } else {
+        text.textContent = item.text;
+    }
 
     overlay.appendChild(text);
     link.appendChild(img);
