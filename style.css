@@ -90,6 +90,8 @@ header a {
     color: var(--buttonText); /* Link color */
     font-weight: bold; /* Optional: Adjust font weight */
     padding: 5px 10px; /* Optional: Adjust padding for each link */
+    transition-property: background-color;
+    transition-duration: .3s;
 }
 
 .header-right ul li a:hover {
@@ -124,14 +126,16 @@ body{
 
 #name {
     font-family: var(--fontTimes);
-    color: var(--one)
+    color: var(--one);
+    transition-property: color, font-size;
+    transition-duration: .3s;
 }
 
 /* hover effect on my name */
 #name:hover {
     color: var(--two);
     font-size: 101%; 
-    transition: transform .2s;
+    /* transition: transform .2s; */
 }
 
 .aboutlink { 
