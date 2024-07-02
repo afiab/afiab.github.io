@@ -391,6 +391,15 @@ main{
         color: white;
         font-size: 20px;
         text-align: center;
+        text-decoration-color: transparent;
+        text-decoration: none;
+    }
+    .slider a {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        text-decoration-color: transparent;
+        text-decoration: none;
     }
 }
 
