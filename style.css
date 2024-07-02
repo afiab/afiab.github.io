@@ -315,6 +315,11 @@ main{
         color: transparent;
     }
 
+    .homesechide #name {
+        color: transparent;
+        transition: 1.5s;
+    }
+
     header {
         flex-direction: column;
         padding: 3%;
