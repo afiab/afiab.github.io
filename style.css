@@ -311,6 +311,19 @@ main{
 /* mobile layout */
 @media screen and (max-width: 769px) {
     /* i used width 342 - 768 pixels for mobile */
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(100%);
+        transition: all 0.5s;
+    }
+    
+    .show {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0);
+    }
+
     header {
         flex-direction: column;
         padding: 3%;
@@ -391,6 +404,10 @@ main{
         color: white;
         font-size: 20px;
         text-align: center;
+        text-decoration: none;
+    }
+    .text a{
+        text-decoration: none;
     }
 }
 
