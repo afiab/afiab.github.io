@@ -16,6 +16,7 @@
     --border: 5px;
     --fontDisplay: "Titillium Web", sans-serif;
     --fontTimes: "Times New Roman", Times, serif;
+    --sliderPadding: 10px;
 }
 
 /* Reset default margin and padding */
@@ -167,7 +168,8 @@ main{
 /* slider formatting below */
 .slider{
     width: 100%;
-    height: var(--height);
+    height: calc(var(--height) + var(--sliderPadding)*2);
+    /*   fixing img cut off by increasing div vert padding */
     overflow: hidden;
     margin-top: 5vh;
     margin-bottom: 5vh; 
@@ -177,6 +179,10 @@ main{
         #000 10% 90%,
         transparent
     );
+    /* background-color: var(--five);  */
+    padding-top: var(--sliderPadding);
+    padding-bottom: var(--sliderPadding);
+    /*   fixing img cut off by increasing div vert padding */
 }
 .slider .list{
     display: flex;
