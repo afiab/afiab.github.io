@@ -278,6 +278,7 @@ main{
     .text {
         color: white;
         font-size: 20px;
+        font-family: var(--fontDisplay);
         text-align: center;
         white-space: pre-wrap;
         margin-left: 15px;
