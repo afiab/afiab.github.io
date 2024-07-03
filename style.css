@@ -6,6 +6,7 @@
     --four: #82688D;
     --five: #201A23;
     --lowOpacity: rgba(66, 27, 87, 0.5);
+    --lowOpacityBG: rgba(216, 208, 220,0.05);
     /* other color vars */
     --sectionColor: var(--three);
     --buttonNorm: var(--four);
@@ -186,6 +187,11 @@ main{
         padding-bottom: var(--sliderPadding);
         /*   fixing img cut off by increasing div vert padding */
     }
+
+    .slider:hover{
+        background-color: var(--lowOpacityBG);
+    }
+
     .slider .list{
         display: flex;
         width: 100%;
@@ -274,8 +280,9 @@ main{
         font-size: 20px;
         text-align: center;
         white-space: pre-wrap;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: var(--lowOpacity);
     }
 }
 
