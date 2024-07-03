@@ -273,6 +273,9 @@ main{
         color: white;
         font-size: 20px;
         text-align: center;
+        white-space: pre-wrap;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -402,6 +405,7 @@ main{
         text-align: center;
         text-decoration-color: transparent;
         text-decoration: none;
+        white-space: pre-wrap;
     }
     .slider a {
         color: white;

@@ -30,11 +30,19 @@ function createImageElement(item, index) {
 
     const text = document.createElement('div');
     text.classList.add('text');
-    if (window.innerWidth > 768) {
-        text.textContent = item.text + ' \u2197';
-    } else {
-        text.textContent = item.text;
+    function updateText() {
+        if (window.innerWidth > 768) {
+            text.textContent = item.text + ' \u2197';
+        } else {
+            text.textContent = item.text;
+        }
     }
+    
+    // Initial call to set the text based on the current window width
+    updateText();
+    
+    // Add an event listener to update the text when the window is resized
+    window.addEventListener('resize', updateText);
 
     overlay.appendChild(text);
     link.appendChild(img);

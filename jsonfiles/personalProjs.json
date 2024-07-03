@@ -2,21 +2,21 @@
     {
         "url": "./images/FolderCleanup.png",
         "link": "https://github.com/afiab/folder-cleanup",
-        "text": "Folder Cleanup"
+        "text": "Folder Cleanup\nPersonal Project\nPython GUI"
     },
     {
         "url": "./images/RitchievsBricky.jpg",
         "link": "https://github.com/afiab/Ritchie-vs-Bricky",
-        "text": "Ritchie vs Bricky"
+        "text": "Ritchie vs Bricky\nBrickHack X 2024\nWinner, PyGame"
     },
     {
         "url": "./images/Flashcard.png",
         "link": "https://github.com/afiab/flashcard",
-        "text": "Flashcard"
+        "text": "Flashcard\nPersonal Project\nPython GUI"
     },
     {
         "url": "https://shorturl.at/V8o5n",
         "link": "https://github.com/afiab/afiab.github.io",
-        "text": "This Website"
+        "text": "This Website\nPersonal Project\nFrontend Web"
     }
 ]
