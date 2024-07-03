@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', populateSliders);
 // Code mostly from this tutorial: https://youtu.be/T33NN_pPeNI
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        // console.log(entry)
         entry.target.classList.toggle('show', entry.isIntersecting);
     });
 });
