@@ -88,7 +88,13 @@ hiddenElements.forEach((el) => observer.observe(el));
 //end of code from https://youtu.be/T33NN_pPeNI
 
 // typewriter effect
-const texts = ["Afia Bidica (if you couldn't tell)", "a Python enthusiast", "a Software Engineering student", "a Hackathon enjoyer", "a woman of color in computing"];
+const texts = [
+    "Afia Bidica (if you couldn't tell)", 
+    "a Python enthusiast", 
+    "a Software Engineering student", 
+    "a Hackathon enjoyer", 
+    "a woman of color in computing"
+];
 let currentText = 0;
 let charIndex = 0;
 const typingSpeed = 75;
