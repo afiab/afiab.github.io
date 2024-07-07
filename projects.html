@@ -41,71 +41,26 @@
 
         <!-- prjs here -->
         <div class="Projects">
-            <!-- no sliders here bc it doesn't make sense tbh -->
-            
-            <!-- at the top will be 3 showcased prjs
-                - 1-2 good finished proj
-                - hackathon proj (prob ritchie vs bricky tbh cuz its silly)
-                - currently working on? (cld be another section)
-            -->
-            
-            <!-- project 1 -->
-            <div class="projectContainer hidden">
-                <div class="projectImage">
-                    <img class="projectImage" src="images\FolderCleanup.png" alt="">
-                </div>
-                <div class="projectDesc">
-                    <h2>Folder Cleanup</h2>
-                    <!-- maybe like languages/tools here -->
-                    <p>A folder organization tool using Python libraries, such as tkinter, shutil, and os</p>
-                    <!-- github/devpost/project sites linked under -->
-                    <div class="projectButtons">
-                        <button><a href="">Code</a></button>
-                        <button><a href="">Devpost</a></button>
-                        <button><a href="">Try it out</a></button>
-                    </div>
-                </div>
+            <!-- <br> -->
+            <!-- Slider credit: LunDev https://youtu.be/mF9yOwlunWk?si=SFpxVKe5YAjgiboR -->
+            <!-- slider example -->
+            <h2 class="hidden" >Featured Projects</h2>
+            <div class="slider  hidden" style="
+                --width: 200px; 
+                --height: 200px; 
+                --quantity: 4;
+            ">
+                <div class="list hidden" id="sliderproj"></div>
             </div>
-            <!-- end project 1 -->
-            <!-- project 2 (Reverse horizontal)-->
-            <div class="projectContainer hidden reverse">
-                <div class="projectDesc">
-                    <h2>Ritchie vs Bricky</h2>
-                    <!-- maybe like languages/tools here -->
-                    <p>A silly game to highlight school spirit. Made with PyGame for BrickHack X</p>
-                    <!-- github/devpost/project sites linked under -->
-                    <div class="projectButtons">
-                        <button><a href="">Code</a></button>
-                        <button><a href="">Devpost</a></button>
-                        <button><a href="">Try it out</a></button>
-                    </div>
-                </div>
-                <div class="projectImage">
-                    <img class="projectImage" src="images\RitchievsBricky.png" alt="">
-                </div>
+            <!-- Hackathons -->
+            <h2 class="hidden" id="PersProjs">Hackathon Projects</h2>
+            <div class="slider hidden" reverse="true" style="
+                --width: 200px; 
+                --height: 200px; 
+                --quantity: 4;
+            ">
+                <div class="list hidden" id="sliderhack"></div>
             </div>
-            <!-- end project 2 -->
-            <!-- project 3 -->
-            <div class="projectContainer hidden">
-                <div class="projectImage">
-                    <img class="projectImage" src="images\Flashcard.png" alt="">
-                </div>
-                <div class="projectDesc">
-                    <h2>Flashcard</h2>
-                    <!-- maybe like languages/tools here -->
-                    <p>A Python GUI that uses file reading to make a flashcard application.
-                        Tkinter library was use
-                    </p>
-                    <!-- github/devpost/project sites linked under -->
-                    <div class="projectButtons">
-                        <button><a href="">Code</a></button>
-                        <button><a href="">Devpost</a></button>
-                        <button><a href="">Try it out</a></button>
-                    </div>
-                </div>
-            </div>
-            <!-- end project 3 -->
-
 
             <!-- bottom of pg is rest of projs
                 maybe some way to filter them?
