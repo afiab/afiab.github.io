@@ -49,6 +49,7 @@
     margin: 5%;
     height: 275px;
     width: auto;
+    max-width: 50vw; /* because some pics are rly wide lol */
     aspect-ratio: auto;
     /* padding: 5%; */
     border: 5px ridge var(--one);
@@ -56,6 +57,7 @@
 
 .projectDesc{
     text-wrap: wrap;
+    margin-right: 3%;
 }
 
 .projectDesc h2 {
