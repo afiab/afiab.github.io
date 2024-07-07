@@ -58,6 +58,7 @@
 .projectDesc{
     text-wrap: wrap;
     margin-right: 3%;
+    padding-left: 3%;
 }
 
 .projectDesc h2 {
