@@ -507,8 +507,11 @@ main{
 /* typewriter effect section */
 
 /* button formatting */
-button {
+#ProjLinkBtn{
     margin: 20px;
+}
+
+button {
     padding: 0;
     border: var(--one);
     font-size: medium;
