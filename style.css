@@ -505,3 +505,29 @@ main{
 }
 
 /* typewriter effect section */
+
+/* button formatting */
+button {
+    margin: 20px;
+    padding: 0;
+    border: var(--one);
+    font-size: medium;
+}
+
+button a{
+    text-decoration: none;
+    background-color: var(--four); /* Adjust hover background color */
+    color: var(--one);
+    font-weight: bold; /* Optional: Adjust font weight */
+    padding: 5px 10px; /* Optional: Adjust padding for each link */
+    transition-property: background-color;
+    transition-duration: .3s;
+    border-radius: var(--border);
+}
+
+button a:hover {
+    background-color: var(--three);
+    color: var(--five); /* Link color */
+    border-radius: var(--border);
+}
+/* end button formatting */
