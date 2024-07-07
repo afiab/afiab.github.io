@@ -103,6 +103,7 @@
         justify-content: space-around;
         width: 85%;
         height: auto;
+        max-width: none; /* because some pics are rly wide lol */
     }
 
     .projectDesc {
