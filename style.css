@@ -513,6 +513,7 @@ main{
 
 button {
     padding: 0;
+    margin: 5px;
     border: var(--one);
     font-size: medium;
 }
