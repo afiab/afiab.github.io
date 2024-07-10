@@ -30,10 +30,8 @@
     justify-content: space-around;
     border-radius: var(--borderRad);
     background-color: transparent;
-    margin: 10px;
+    margin: 20px 20px 25px 20px;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .projectContainer:hover {
