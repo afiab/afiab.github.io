@@ -46,7 +46,7 @@
 }
 
 .projectImage img{
-    margin: 5%;
+    margin: 5px;
     height: 275px;
     width: auto;
     max-width: 50vw; /* because some pics are rly wide lol */
