@@ -69,23 +69,20 @@
 }
 
 .projectDesc h2 {
-    padding: 0;
-    padding-left: 2%;
+    padding: 0 0 10px 2px;
     margin: 1%;
 }
 
 .projectDesc p {
     font-family: var(--fontDisplay);
     color: var(--three);
-    padding-left: 2%;
-    margin: 1%;
+    padding: 0 2px 2px 3px;
+    margin: 2px;
 }
 
 .projectButtons{
-    margin: 2%;
-    margin-right: 2px;
-    padding: 2%;
-    padding-left: 0;
+    margin: 12px 2px 2px 2px;
+    padding: 0 2px 2px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
