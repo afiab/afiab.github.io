@@ -41,6 +41,7 @@
     box-shadow: var(--shadowPx) var(--shadowPx) var(--shadowPx) var(--shadowDark) inset,
     calc(var(--shadowPx)*-1) calc(var(--shadowPx)*-1) var(--shadowPx) var(--shadowLight) inset;
     /* i know the variables look crazy but i wanted to change the values quickly lol */
+    backdrop-filter: blur(2px);
 }
 
 .projectImage {
