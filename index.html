@@ -14,6 +14,26 @@
     <!-- control mobile layout -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- end control mobile layout -->
+    <!-- simplifying scroll animation with inspo from https://youtu.be/0TnO1GzKWPc -->
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                scaling: 0.5;
+            }
+            to {
+                opacity: 1;
+                scaling: 1;
+            }
+        }
+        .appear {
+                animation: appeear 1s linear;
+                animation-timeline: view(); 
+                /*      animation only happens when elem is visible on scrn */
+                animation-range: entry 0 cover 40%;
+                /*      makes anim happen when elem is visible */
+            }
+    </style>
 </head>
 
 <body>
@@ -36,7 +56,7 @@
 
     <div class="content">
         <!-- welcome -->
-        <div id="Home">
+        <div id="Home" class="appear">
             <h1 class="section hidden homesec">Welcome to <font id="name" class="homesec" color="#FFFCF9">Afia Bidica</font>'s Portfolio!</h1>
         </div>
         <!-- some text about me, experience, school major/minor hackathons, careers etc -->
@@ -44,7 +64,7 @@
 
         <!-- prjs here -->
         <div class="Projects">
-            <h1 class="section hidden" id='Projects'>Projects</h1>
+            <h1 class="section hidden appear" id='Projects'>Projects</h1>
             
             <!-- at the top will be 3 showcased prjs
                 - 1-2 good finished proj
@@ -53,7 +73,7 @@
             -->
             
             <!-- project 1 -->
-            <div class="projectContainer hidden">
+            <div class="projectContainer hidden appear">
                 <div class="projectImage">
                     <img class="projectImage" src="images\FolderCleanup.png" alt="">
                 </div>
@@ -71,7 +91,7 @@
             </div>
             <!-- end project 1 -->
             <!-- project 2 (Reverse horizontal)-->
-            <div class="projectContainer hidden reverse">
+            <div class="projectContainer hidden reverse appear">
                 <div class="projectDesc">
                     <h2>Ritchie vs Bricky</h2>
                     <!-- maybe like languages/tools here -->
@@ -90,7 +110,7 @@
             </div>
             <!-- end project 2 -->
             <!-- project 3 -->
-            <div class="projectContainer hidden">
+            <div class="projectContainer hidden appear">
                 <div class="projectImage">
                     <img class="projectImage" src="images\Flashcard.png" alt="">
                 </div>
@@ -116,7 +136,7 @@
 
         <!-- About Section -->
         <div class="AboutSect">
-            <h1 class="section hidden" id='About'>About</h1>
+            <h1 class="section hidden appear" id='About'>About</h1>
             <!-- typewriter effect -->
             <div class="typewriter-container hidden">
                 <h3 class="hidden" id="nomargin">Hello, I am <span class="hidden" id="typewriter"></span><span class="caret"><font id="line" color="#201A23">|</font></span></h3>
