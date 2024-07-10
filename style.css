@@ -190,6 +190,7 @@ main{
 
     .slider:hover{
         background-color: var(--lowOpacityBG);
+        backdrop-filter: blur(2px);
     }
 
     .slider .list{
