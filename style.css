@@ -118,7 +118,8 @@ body{
 
 /* make Home font large and center */
 #Home {
-    font-size: 200%;
+    font-size: 32px;
+    line-height: 105px;
     text-align: center;
     margin: auto;
     padding-top: 15%;
