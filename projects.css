@@ -14,6 +14,9 @@
     --sliderPadding: 10px;
     /* prj containter vars */
     --borderRad: 5%;
+    --shadowDark: rgba(0, 0, 0, 0.2);
+    --shadowLight: rgba(240, 225, 248, 0.166);
+    --shadowPx: 20px;
 }
 
 .Projects {
@@ -35,6 +38,9 @@
 
 .projectContainer:hover {
     background-color: var(--lowOpacityBG);
+    box-shadow: var(--shadowPx) var(--shadowPx) var(--shadowPx) var(--shadowDark) inset,
+    calc(var(--shadowPx)*-1) calc(var(--shadowPx)*-1) var(--shadowPx) var(--shadowLight) inset;
+    /* i know the variables look crazy but i wanted to change the values quickly lol */
 }
 
 .projectImage {
