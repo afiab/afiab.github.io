@@ -19,13 +19,6 @@
     --shadowPx: 20px;
 }
 
-.project {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    display: none; /* Hide all projects initially */
-}
-
 .Projects {
     align-items: center;
     padding: 0;
