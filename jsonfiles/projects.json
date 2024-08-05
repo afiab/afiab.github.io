@@ -9,7 +9,7 @@
         "url": "./images/Flashcard.png",
         "link": "https://github.com/afiab/flashcard",
         "text": "Flashcard\nPersonal Project\nPython GUI",
-        "attributes": "python, app, automation"
+        "attributes": "python, app"
     },
     {
         "url": "https://shorturl.at/V8o5n",
@@ -21,25 +21,25 @@
         "url": "./images/RitchievsBricky.png",
         "link": "https://github.com/afiab/Ritchie-vs-Bricky",
         "text": "Ritchie vs Bricky\nBrickHack X 2024 [Winner]",
-        "attributes": "python, app, automation"
+        "attributes": "python, app, game"
     },
     {
         "url": "./images/Spotiverse.jpg",
         "link": "https://afiab.github.io/spotiverse/",
         "text": "Spotiverse\nTiger Games 2023",
-        "attributes": "javascript, website, frontend"
+        "attributes": "processing, javascript, website, frontend, game"
     },
     {
         "url": "./images/Ambulert.jpg",
         "link": "https://ambulert.glitch.me/",
         "text": "Ambulert\nCSHacks 2023",
-        "attributes": "javascript, website, frontend"
+        "attributes": "processing, javascript, website, frontend, game"
     },
     {
         "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/587/083/datas/gallery.jpg",
         "link": "https://devpost.com/software/schedule-maker-bpj9d1",
         "text": "Schedule Visualizer\nClayHack 2023",
-        "attributes": "python, app, automation"
+        "attributes": "processing, python, app"
     },
     {
         "url": "images/CyberKillers.png",
