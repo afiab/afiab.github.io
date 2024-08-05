@@ -99,6 +99,34 @@ header a {
     border-radius: var(--border); /* Optional: Rounded corners on hover */
 }
 
+ul li ul.dropdown li {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    z-index: 1001;
+    display: none;
+    
+    background-color: var(--four);
+    width: 100px;
+    padding: 10px 15px 5px 15px;
+}
+
+
+ul li:hover ul.dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px auto;
+}
+
 body{
     margin: 0;
     background-color: var(--background);
