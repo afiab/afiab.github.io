@@ -42,30 +42,60 @@
 
         <!-- prjs here -->
         <div class="Projects">
-            <!-- <br> -->
-            <!-- Slider credit: LunDev https://youtu.be/mF9yOwlunWk?si=SFpxVKe5YAjgiboR -->
-            <!-- slider example -->
-            <h2 class="hidden" >Featured Projects</h2>
-            <div class="slider  hidden" style="
-                --width: 200px; 
-                --height: 200px; 
-                --quantity: 4;
-            ">
-                <div class="list hidden" id="sliderproj"></div>
+            <div id="buttons">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('python')">Python</button>
+                <button onclick="filterProjects('app')">App</button>
+                <button onclick="filterProjects('automation')">Automation</button>
+                <!-- Add more buttons as needed -->
             </div>
-            <!-- Hackathons -->
-            <h2 class="hidden" id="PersProjs">Hackathon Projects</h2>
-            <div class="slider hidden" reverse="true" style="
-                --width: 200px; 
-                --height: 200px; 
-                --quantity: 4;
-            ">
-                <div class="list hidden" id="sliderhack"></div>
+            
+            <div id="projects-container">
+                <!-- Projects will be displayed here -->
             </div>
 
-            <!-- bottom of pg is rest of projs
-                maybe some way to filter them?
-            -->
+            <script>
+                let projects = [];
+        
+                async function loadProjects() {
+                    try {
+                        const response = await fetch('./jsonfiles/projects.json');
+                        projects = await response.json();
+                        displayProjects(projects); // Initially display all projects
+                    } catch (error) {
+                        console.error('Error loading projects:', error);
+                    }
+                }
+        
+                function displayProjects(filteredProjects) {
+                    const container = document.getElementById('projects-container');
+                    container.innerHTML = ''; // Clear previous projects
+        
+                    filteredProjects.forEach(project => {
+                        const projectDiv = document.createElement('div');
+                        projectDiv.className = 'project projectContainer';
+                        projectDiv.style.display = 'block'; // Show project
+                        projectDiv.innerHTML = `
+                            <img src="${project.url}" class="projectImage" alt="Project Image">
+                            <p class="projectDesc">${project.text}</p>
+                            <a href="${project.link}">View Project</a>
+                        `;
+                        container.appendChild(projectDiv);
+                    });
+                }
+        
+                function filterProjects(attribute) {
+                    if (attribute === 'all') {
+                        displayProjects(projects);
+                    } else {
+                        const filteredProjects = projects.filter(project => project.attributes.includes(attribute));
+                        displayProjects(filteredProjects);
+                    }
+                }
+        
+                // Load projects on page load
+                window.onload = loadProjects;
+            </script>  
         </div>
 
         <!-- contact info - same as home -->
