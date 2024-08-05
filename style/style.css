@@ -139,6 +139,8 @@ body{
 .content {
     padding: 15px;
     color: var(--buttonText);
+    max-width: 900px;
+    margin: 0px auto;
 }
 
 /* make Home font large and center */
