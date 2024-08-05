@@ -80,17 +80,13 @@
         
                     const img = document.createElement('img');
                     img.classList.add('projectImage');
+                    img.classList.add('src');
                     img.src = project.url;
                     img.alt = 'Project Image';
         
                     const overlay = document.createElement('div');
-                    overlay.classList.add('overlay');
+                    overlay.textContent = project.text;
         
-                    const text = document.createElement('div');
-                    text.classList.add('text');
-                    text.textContent = project.text;
-        
-                    overlay.appendChild(text);
                     link.appendChild(img);
                     link.appendChild(overlay);
                     div.appendChild(link);
