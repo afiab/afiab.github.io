@@ -20,7 +20,7 @@
 }
 
 .Projects {
-    width: 90vw;
+    /* width: 90vw; */
     margin: auto;
     padding: auto;
     display: flex;
@@ -68,7 +68,7 @@
 
 .project {
     position: relative;
-    width: 300px; /* Fixed width for consistent layout */
+    width: 220px; /* Fixed width for consistent layout */
     border-radius: var(--borderRad);
     overflow: hidden;
     box-shadow: var(--shadowPx) var(--shadowPx) var(--shadowPx) var(--shadowDark);
