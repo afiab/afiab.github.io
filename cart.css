@@ -6,7 +6,7 @@
     --four: #82688D;
     --five: #201A23;
     --lowOpacity: rgba(66, 27, 87, 0.5);
-    --lowOpacityBG: rgba(216, 208, 220, 0.1);
+    --lowOpacityBG: rgba(66, 27, 87, 0.7);
     /* other vars general */
     --border: 5px;
     --fontDisplay: "Titillium Web", sans-serif;
@@ -50,8 +50,8 @@
     left: 0;
     right: 0;
     bottom: 0; /* Cover the entire project container */
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    background-color: var(--lowOpacity);
+    color: rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,9 +62,10 @@
 
 .project:hover .overlay {
     opacity: 1; /* Show the overlay on hover */
-}
-
-.text {
+    color: white;
+    font-size: 20px;
     font-family: var(--fontDisplay);
     text-align: center;
+    white-space: pre-wrap;
+    background-color: var(--lowOpacityBG);
 }
