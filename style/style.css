@@ -102,7 +102,7 @@ header a {
 body{
     margin: 0;
     background-color: var(--background);
-    background-image: url("images/Background.png");
+    background-image: url("../images/Background.png");
     background-size: 400px;
     background-repeat: repeat;
     background-attachment: fixed;
