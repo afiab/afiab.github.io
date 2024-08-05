@@ -83,6 +83,7 @@
     width: 100%; /* Fit the width of the project container */
     aspect-ratio: 1.5;
     display: block;
+    border: 5px ridge var(--one);
 }
 
 .overlay {
