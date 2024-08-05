@@ -52,7 +52,7 @@
 
 .projectImage img{
     margin: 5px;
-    height: 275px;
+    height: 200px;
     width: auto;
     max-width: 50vw; /* because some pics are rly wide lol */
     aspect-ratio: auto;
