@@ -24,12 +24,39 @@
     flex-direction: row;
 }
 
+#buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#buttons button {
+    width: 125px;
+    padding: 0;
+    margin: 5px;
+    border: var(--one);
+    font-size: medium;
+    text-decoration: none;
+    background-color: var(--four); /* Adjust hover background color */
+    color: var(--one);
+    font-weight: bold; /* Optional: Adjust font weight */
+    padding: 5px 10px; /* Optional: Adjust padding for each link */
+    transition-property: background-color;
+    transition-duration: .3s;
+    border-radius: var(--border);
+}
+
+#buttons button:hover {
+    background-color: var(--three);
+    color: var(--five); /* Link color */
+    border-radius: var(--border);
+}
+
 #projects-container {
     display: flex;
     flex-wrap: wrap;
     gap: 15px; /* Space between items */
-    justify-content: space-evenly; /* Align items to the start of the row */
-    margin: 0 auto; /* Center the container */
+    justify-content: center; /* Align items to the start of the row */
 }
 
 .project {
@@ -80,14 +107,21 @@
         display: block;
         flex-direction: row;
     }
+
+    #buttons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 769px) {
+
     #projects-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
     }
 
     .project {
