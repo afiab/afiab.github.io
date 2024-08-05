@@ -20,6 +20,9 @@
 }
 
 .Projects {
+    width: 90vw;
+    margin: auto;
+    padding: auto;
     display: flex;
     flex-direction: row;
 }
@@ -55,8 +58,12 @@
 #projects-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 15px; /* Space between items */
     justify-content: center; /* Align items to the start of the row */
+    align-content: center;
+    margin: 0 auto; /* Center the container */
+    padding: 0; /* Remove any padding */
 }
 
 .project {
@@ -68,6 +75,8 @@
     display: flex;
     flex-direction: column; /* Stack image and overlay vertically */
     align-items: center;
+    margin: 0; /* Remove any margin to avoid extra height */
+    background: transparent; /* Ensure background is transparent */
 }
 
 .projectImage {
@@ -90,6 +99,7 @@
     padding: 20px;
     opacity: 0; /* Hide the overlay initially */
     transition: opacity 0.3s ease; /* Smooth transition */
+    z-index: 1;
 }
 
 .project:hover .overlay {
