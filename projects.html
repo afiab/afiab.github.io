@@ -85,6 +85,7 @@
                     img.alt = 'Project Image';
         
                     const overlay = document.createElement('div');
+                    overlay.classList.add('overlay');
                     overlay.textContent = project.text;
         
                     link.appendChild(img);
@@ -100,7 +101,7 @@
         
                     filteredProjects.forEach((project, index) => {
                         const projectDiv = createProjectElement(project, index);
-                        projectDiv.style.display = 'block'; // Show project
+                        //projectDiv.style.display = 'block'; // Show project
                         container.appendChild(projectDiv);
                     });
                 }
