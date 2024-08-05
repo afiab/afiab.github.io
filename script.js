@@ -1,3 +1,4 @@
+/*
 // Function to fetch JSON data
 async function fetchImages(filepath) {
     try {
@@ -73,6 +74,8 @@ async function populateSliders() {
 
 // Call populateSliders function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', populateSliders);
+*/
+// above is commented out because no more sliders
 
 // Home section scroll animation
 // Code mostly from this tutorial: https://youtu.be/T33NN_pPeNI
