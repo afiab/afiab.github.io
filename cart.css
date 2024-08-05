@@ -19,6 +19,11 @@
     --shadowPx: 20px;
 }
 
+.Projects {
+    display: flex;
+    flex-direction: row;
+}
+
 #projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -68,4 +73,46 @@
     text-align: center;
     white-space: pre-wrap;
     background-color: var(--lowOpacityBG);
+}
+
+@media screen and (max-width: 779px) {
+    .Projects {
+        display: block;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #projects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .project {
+        position: relative; /* Ensure the positioning is relative */
+        max-width: 100%; /* Ensure the project fits within the viewport */
+    }
+
+    .projectImage {
+        width: 100%; /* Ensure the image fits the container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .overlay {
+        position: static; /* Position the overlay below the image */
+        opacity: 1; /* Always visible on mobile */
+        background-color: transparent; /* Background color for overlay */
+        color: white; /* Text color */
+        display: block; /* Ensure overlay is displayed as a block */
+        padding: 10px; /* Padding for text */
+        white-space: pre-wrap; /* Preserve new lines and spaces */
+    }
+
+    .project a {
+        text-decoration: none; /* Remove underline from links */
+        text-align: center;
+        text-wrap: auto;
+    }
 }
