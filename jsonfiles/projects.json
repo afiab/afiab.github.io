@@ -40,5 +40,11 @@
         "link": "https://devpost.com/software/schedule-maker-bpj9d1",
         "text": "Schedule Visualizer\nClayHack 2023",
         "attributes": "python, app, automation"
+    },
+    {
+        "url": "images/CyberKillers.png",
+        "link": "https://afiab.github.io/CyberKillers/",
+        "text": "CyberKillers",
+        "attributes": "website, frontend"
     }
 ]
