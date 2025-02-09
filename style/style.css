@@ -55,12 +55,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--buttonNorm); /* Adjust background color as needed */
-    padding: 10px 20px; /* Adjust padding as needed */
-    color: var(--buttonText); /* Text color for header */
+    background-color: var(--buttonNorm);
+    padding: 10px 20px;
+    color: var(--buttonText);
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it stays above other content */
+    z-index: 1000;
 }
 
 header a {
@@ -74,29 +74,43 @@ header a {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center; /* for vertical alignment within the ul */
 }
 
 .header-right ul li {
-    margin-left: 7px; /* Adjust spacing between menu items */
+    margin-left: 25px;
 }
 
 .header-right ul li:first-child {
-    margin-left: 0; /* Remove margin for the first item */
+    margin-left: 0;
 }
 
 .header-right ul li a {
     text-decoration: none;
-    color: var(--buttonText); /* Link color */
-    font-weight: bold; /* Optional: Adjust font weight */
-    padding: 5px 10px; /* Optional: Adjust padding for each link */
+    color: var(--buttonText);
+    font-weight: bold;
     transition-property: background-color;
     transition-duration: .3s;
+    display: inline-block; 
+    line-height: 1;
 }
 
 .header-right ul li a:hover {
-    /* Optional: Add hover effect */
-    background-color: var(--buttonHover); /* Adjust hover background color */
-    border-radius: var(--border); /* Optional: Rounded corners on hover */
+    background-color: var(--buttonHover);
+    border-radius: var(--border);
+}
+
+/* resume link in nav bar */
+#resumeLink {
+    background-color: var(--buttonText);
+    color: var(--buttonNorm);
+    border-radius: var(--border);
+    padding: 5px 10px; 
+}
+
+#resumeLink:hover {
+    background-color: var(--buttonHover);
+    color: var(--buttonText)
 }
 
 ul li ul.dropdown li {
