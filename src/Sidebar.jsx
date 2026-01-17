@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './Sidebar.css';
 
 const navConfig = [
-    { title: "", links: [{ label: "HOME", path: "/about" }] },
+    { title: "", links: [{ label: "HOME", path: "/index" }] },
     {
         title: "Fields",
         links: [
-            { label: "SOFTWARE ENGINEERING", path: "/swe" },
+            { label: "SOFTWARE ENGINEERING", path: "/softeng" },
             { label: "GRAPHIC MEDIA DESIGN", path: "/gmd" },
             { label: "BUSINESS OPS + HR", path: "/ds" }
         ]

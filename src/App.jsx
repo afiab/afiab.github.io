@@ -12,10 +12,10 @@ function App() {
   },
   {
     type: "image-overlay",
-    imageUrl: "/public/placeholder.png",
+    imageUrl: "/public/placeholder.gif",
     title: "Projects & Experience",
     subtitle: "Month Year to Month Year",
-    link: "/swe" // The destination URL
+    link: "/softeng" // The destination URL
   },
   {
     type: "text",
@@ -24,7 +24,7 @@ function App() {
   },
   {
     type: "image-overlay",
-    imageUrl: "/public/placeholder.png",
+    imageUrl: "/public/placeholder.gif",
     title: "Media Campaigns",
     subtitle: "Month Year to Month Year",
     link: "/swe" // The destination URL
@@ -36,7 +36,7 @@ function App() {
   },
   {
     type: "image-overlay",
-    imageUrl: "/public/placeholder.png",
+    imageUrl: "/public/placeholder.gif",
     title: "Cases & Solutions",
     subtitle: "Month Year to Month Year",
     link: "/swe" // The destination URL

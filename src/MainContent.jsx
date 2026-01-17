@@ -6,11 +6,21 @@ const MainContent = ({ sections = [] }) => {
         <main className="main-viewport">
             <div className="content-container">
                 {sections.map((section, index) => {
+                    
                     // If the section is a text block
                     if (section.type === "text") {
                         return (
                             <div key={index} className="text-block">
                                 <h2 className="header-secondary">{section.header}</h2>
+                                <p className="paragraph-text">{section.content}</p>
+                            </div>
+                        );
+                    }
+
+                    // If the section is a paragraph block
+                    if (section.type === "paragraph") {
+                        return (
+                            <div key={index} className="text-block">
                                 <p className="paragraph-text">{section.content}</p>
                             </div>
                         );
