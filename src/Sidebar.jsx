@@ -1,56 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 
 const navConfig = [
+    { title: "", links: [{ label: "HOME", path: "/about" }] },
     {
-    title: "", // Empty for the top section
-    links: [
-        { label: "HOME", path: "/about" }
+        title: "Fields",
+        links: [
+            { label: "SOFTWARE ENGINEERING", path: "/swe" },
+            { label: "GRAPHIC MEDIA DESIGN", path: "/gmd" },
+            { label: "BUSINESS OPS + HR", path: "/ds" }
         ]
     },
-    {
-    title: "Fields",
-    links: [
-        { label: "SOFTWARE ENGINEERING", path: "/swe" },
-        { label: "GRAPHIC MEDIA DESIGN", path: "/gmd" },
-        { label: "BUSINESS OPS + HR", path: "/ds" }
-        ]
-    },
-    {
-    title: "Resources",
-    links: [
-        { label: "CONTACT + RESUME", path: "/res" }
-        ]
-    }
+    { title: "Resources", links: [{ label: "CONTACT + RESUME", path: "/res" }] }
 ];
 
 const Sidebar = ({ sections = navConfig, logoText = "AFIA BIDICA" }) => {
-    return (
-    <aside className="sidebar">
-      {/* Logo Section */}
-        <div className="sidebar-brand">
-        <div className="logo-box">{logoText}</div>
-        </div>
+    const [isOpen, setIsOpen] = useState(false);
 
-        <nav className="sidebar-nav">
-        {sections.map((section, index) => (
-            <div key={index} className="sidebar-section">
-            {section.title && (
-                <h3 className="section-title">{section.title}</h3>
-            )}
-            <ul className="section-list">
-                {section.links.map((link, linkIdx) => (
-                <li key={linkIdx} className="section-item">
-                    <a href={link.path} className="section-link">
-                    {link.label}
-                    </a>
-                </li>
-                ))}
-            </ul>
-            </div>
-        ))}
-        </nav>
-    </aside>
+    return (
+        <>
+            {/* The Boxed Hamburger - CSS will hide this on Desktop */}
+            <button 
+                className={`hamburger-box ${isOpen ? 'is-active' : ''}`} 
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label="Toggle Menu"
+            >
+                <div className="hamburger-inner">
+                    <span className="bar top"></span>
+                    <span className="bar mid"></span>
+                    <span className="bar bot"></span>
+                </div>
+            </button>
+
+            <aside className={`sidebar ${isOpen ? 'active' : ''}`}>
+                <div className="sidebar-brand">
+                    <div className="logo-box">{logoText}</div>
+                </div>
+
+                <nav className="sidebar-nav">
+                    {sections.map((section, index) => (
+                        <div key={index} className="sidebar-section">
+                            {section.title && <h3 className="section-title">{section.title}</h3>}
+                            <ul className="section-list">
+                                {section.links.map((link, linkIdx) => (
+                                    <li key={linkIdx} className="section-item">
+                                        <a href={link.path} className="section-link" onClick={() => setIsOpen(false)}>
+                                            {link.label}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </nav>
+            </aside>
+            
+            {/* Overlay only active on mobile */}
+            {isOpen && <div className="overlay" onClick={() => setIsOpen(false)}></div>}
+        </>
     );
 };
 
