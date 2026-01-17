@@ -13,7 +13,7 @@ function App() {
   {
     type: "image-overlay",
     imageUrl: "/public/placeholder.png",
-    title: "Title here",
+    title: "Projects & Experience",
     subtitle: "Month Year to Month Year",
     link: "/swe" // The destination URL
   },
@@ -21,6 +21,25 @@ function App() {
     type: "text",
     header: "Graphic Design",
     content: "blah blah lorem ipsum dolor sit amet place holder text..."
+  },
+  {
+    type: "image-overlay",
+    imageUrl: "/public/placeholder.png",
+    title: "Media Campaigns",
+    subtitle: "Month Year to Month Year",
+    link: "/swe" // The destination URL
+  },
+  {
+    type: "text",
+    header: "Business Operations + HR",
+    content: "blah blah lorem ipsum dolor sit amet place holder text..."
+  },
+  {
+    type: "image-overlay",
+    imageUrl: "/public/placeholder.png",
+    title: "Cases & Solutions",
+    subtitle: "Month Year to Month Year",
+    link: "/swe" // The destination URL
   }
 ];
 
