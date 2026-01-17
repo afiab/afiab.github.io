@@ -32,11 +32,11 @@
     color: var(--accent-color);
     font-weight: bold;
     margin-bottom: 40px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .section-title {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.15em;
     color: var(--section-title-color);
     text-transform: uppercase;
@@ -50,7 +50,7 @@
 .section-link {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 13px;
+    font-size: 14px;
     transition: color 0.2s ease;
 }
 .section-link:hover { color: var(--text-hover-color); }
