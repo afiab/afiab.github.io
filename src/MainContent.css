@@ -50,7 +50,7 @@
     font-size: 16px;
     line-height: 1.7;
     color: #837489;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 /* --- Wide Image Overlay Div --- */
@@ -58,7 +58,7 @@
     position: relative;
     width: 100%;
     aspect-ratio: 20 / 10;
-    margin: 40px 0;
+    margin: 20px 0;
     overflow: hidden;
     border-radius: 4px;
     background-color: #1a151b;
