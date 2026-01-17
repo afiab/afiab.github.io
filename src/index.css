@@ -1,3 +1,7 @@
 body{
     background-color:  #1a151b;
+    background-image: 
+        radial-gradient(at 0% 0%, hsla(273, 100%, 72%, 0.15) 0px, transparent 50%), 
+        radial-gradient(at 100% 100%, hsla(260, 100%, 70%, 0.1) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, hsla(280, 50%, 40%, 0.05) 0px, transparent 50%);
 }
