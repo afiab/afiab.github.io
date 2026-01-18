@@ -19,10 +19,10 @@ function MediaApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "/public/placeholder.gif",
-            title: "Projects & Experience",
-            subtitle: "Month Year to Month Year",
-            link: "/swe" // The destination URL
+            imageUrl: "/images/Media_COMS.png",
+            title: "COMS Public Relations Graphics",
+            subtitle: "December 2025 to Present",
+            link: "/media" // The destination URL
         },
         {
             type: "paragraph",

@@ -35,7 +35,7 @@ function App() {
       imageUrl: "/public/placeholder.gif",
       title: "Media Campaigns",
       subtitle: "Month Year to Month Year",
-      link: "/swe" // The destination URL
+      link: "/media" // The destination URL
     },
     {
       type: "text",
@@ -47,7 +47,7 @@ function App() {
       imageUrl: "/public/placeholder.gif",
       title: "Cases & Solutions",
       subtitle: "Month Year to Month Year",
-      link: "/swe" // The destination URL
+      link: "/business" // The destination URL
     }
 ];
 
