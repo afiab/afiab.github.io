@@ -93,7 +93,7 @@
     font-weight: 700;
     margin: 0 0 8px 0;
     text-shadow: var(--overlay-shadow-color);
-    -webkit-text-stroke: 1px #5b2d93;
+    /* -webkit-text-stroke: 1px #1b151c; */
 }
 
 .overlay-subtitle {
@@ -102,7 +102,7 @@
     font-weight: 400;
     margin: 0;
     text-shadow: var(--overlay-shadow-color);
-    -webkit-text-stroke: 1px #5b2d93;
+    /* -webkit-text-stroke: 1px #1b151c; */
 }
 
 .image-link-wrapper {
