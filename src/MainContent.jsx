@@ -50,6 +50,12 @@ const MainContent = ({ sections = [] }) => {
                         );
                     }
 
+                    if (section.type === "iframe") {
+                        return (
+                            <iframe src={section.link} width="100%" height="600px" frameborder="0"></iframe>
+                        );
+                    }
+
                     return null;
                 })}
             </div>
