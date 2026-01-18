@@ -11,7 +11,7 @@ const navConfig = [
             { label: "BUSINESS OPS + HR", path: "/business" }
         ]
     },
-    { title: "Resources", links: [{ label: "CONTACT + RESUME", path: "/res" }] }
+    { title: "Resources", links: [{ label: "CONTACT + RESUME", path: "/contact" }] }
 ];
 
 const Sidebar = ({ sections = navConfig, logoText = "AFIA BIDICA" }) => {
