@@ -8,7 +8,7 @@ const navConfig = [
         links: [
             { label: "SOFTWARE ENGINEERING", path: "/softeng" },
             { label: "GRAPHIC MEDIA DESIGN", path: "/media" },
-            { label: "BUSINESS OPS + HR", path: "/ds" }
+            { label: "BUSINESS OPS + HR", path: "/business" }
         ]
     },
     { title: "Resources", links: [{ label: "CONTACT + RESUME", path: "/res" }] }
