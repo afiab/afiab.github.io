@@ -128,4 +128,8 @@
         pointer-events: auto; /* Re-enables clicking to close */
         transition: opacity 1s ease-in;
     }
+
+    .section-link {
+        font-size: 13.8px;
+    }
 }
