@@ -6,9 +6,12 @@ function SoftEngApp() {
 
     const SEData = [
         {
-            type: "text",
+            type: "title",
             header: "Software Engineering",
-            content: "blah blah lorem ipsum dolor sit amet place holder text..."
+        },
+        {
+            type: "paragraph",
+            content: "paragraph explaining this section"
         },
         {
             type: "paragraph",

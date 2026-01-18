@@ -7,6 +7,15 @@ const MainContent = ({ sections = [] }) => {
             <div className="content-container">
                 {sections.map((section, index) => {
                     
+                    // If the section is a big title block
+                    if (section.type === "title") {
+                        return (
+                            <div key={index} className="title-block">
+                                <h1 className="header-primary">{section.header}</h1>
+                            </div>
+                        );
+                    }
+
                     // If the section is a text block
                     if (section.type === "text") {
                         return (

@@ -2,6 +2,7 @@
     --overlay-text-color: #1a151b;
     --sidebar-border-color: #f0f0f0;
     --text-color: #837489;
+    --text-title-color: #c094cd;
     --text-hover-color: #c592e2;
     --section-title-color: #b4a1ba;
     --accent-color: #b272ff;
@@ -31,7 +32,7 @@
 .header-primary {
     font-size: 32px;
     font-weight: 700;
-    color: #fff;
+    color: var(--text-title-color);
     /* Assuming the dark theme from your sidebar */
     margin-bottom: 24px;
 }
