@@ -32,9 +32,9 @@ function App() {
     },
     {
       type: "image-overlay",
-      imageUrl: "/public/placeholder.gif",
+      imageUrl: "images/Home-Media.png",
       title: "Media Campaigns",
-      subtitle: "Month Year to Month Year",
+      subtitle: "View My Graphic Media Design Work",
       link: "/media" // The destination URL
     },
     {
