@@ -20,9 +20,9 @@ function App() {
     },
     {
       type: "image-overlay",
-      imageUrl: "/public/placeholder.gif",
+      imageUrl: "images/Home-Softeng.png",
       title: "Projects & Experience",
-      subtitle: "Month Year to Month Year",
+      subtitle: "View My Software Engineering Work",
       link: "/softeng" // The destination URL
     },
     {
