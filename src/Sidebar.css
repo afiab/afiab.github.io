@@ -16,7 +16,7 @@
 
 .sidebar {
     width: 175px;
-    height: 100vh;
+    height: 90vh;
     padding: 40px;
     background: var(--sidebar-bg-color-clear);
     border-right: 1px solid var(--sidebar-border-color-clear);
@@ -101,6 +101,7 @@
     /* Sidebar transitions to hidden off-screen */
     .sidebar {
         transform: translateX(-100%);
+        height: 95vh;
         width: 170px;
         transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
         background-color: var(--sidebar-bg-color);
