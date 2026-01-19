@@ -30,16 +30,9 @@ function MediaApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "/public/placeholder.gif",
-            title: "Media Campaigns",
-            subtitle: "Month Year to Month Year",
-            link: "/swe" // The destination URL
-        },
-        {
-            type: "image-overlay",
-            imageUrl: "/public/placeholder.gif",
-            title: "Cases & Solutions",
-            subtitle: "Month Year to Month Year",
+            imageUrl: "/images/Media_HACKCOMS.png",
+            title: "HACK.COMS Marketing Campaign",
+            subtitle: "March 2025 to November 2025",
             link: "/swe" // The destination URL
         }
     ];
