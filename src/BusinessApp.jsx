@@ -19,9 +19,9 @@ function BusinessApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "/public/placeholder.gif",
-            title: "Projects & Experience",
-            subtitle: "Month Year to Month Year",
+            imageUrl: "/images/Business-Membership.png",
+            title: "COMS Membership Management",
+            subtitle: "December 2023 to Present",
             link: "/business" // The destination URL
         },
         {
@@ -30,16 +30,16 @@ function BusinessApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "/public/placeholder.gif",
-            title: "Media Campaigns",
-            subtitle: "Month Year to Month Year",
+            imageUrl: "/images/Business-Secretary.png",
+            title: "COMS Secretary Role",
+            subtitle: "December 2023 to Present",
             link: "/business" // The destination URL
         },
         {
             type: "image-overlay",
-            imageUrl: "/public/placeholder.gif",
-            title: "Cases & Solutions",
-            subtitle: "Month Year to Month Year",
+            imageUrl: "/images/Business-Tracker.png",
+            title: "Job Application Tracker",
+            subtitle: "2025 to Present, Personal Project",
             link: "/business" // The destination URL
         }
     ];
