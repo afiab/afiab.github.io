@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './MainContent.css';
 
 const MainContent = ({ sections = [] }) => {
+    useEffect(() => {
+    const handleMouseMove = (e) => {
+      // This creates the --mouse-x and --mouse-y variables globally
+        document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+        document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    
+    // Clean up listener when you leave the page
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+    }, []);
     return (
+        <>
+        <div className="app-layout"></div>
+        <div className="custom-cursor"></div>
         <main className="main-viewport">
             <div className="content-container">
                 {sections.map((section, index) => {
@@ -60,6 +75,7 @@ const MainContent = ({ sections = [] }) => {
                 })}
             </div>
         </main>
+        </>
     );
 };
 
