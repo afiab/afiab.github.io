@@ -44,9 +44,9 @@ function App() {
     },
     {
       type: "image-overlay",
-      imageUrl: "/public/placeholder.gif",
+      imageUrl: "/images/Home-Business.png",
       title: "Cases & Solutions",
-      subtitle: "Month Year to Month Year",
+      subtitle: "Real-World Business Operations",
       link: "/business" // The destination URL
     }
 ];
