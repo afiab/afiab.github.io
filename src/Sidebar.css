@@ -72,6 +72,7 @@
         justify-content: center;
         cursor: pointer;
         z-index: 1100;
+        cursor: none;
     }
 
     /* Staggered Lines logic */

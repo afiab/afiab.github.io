@@ -1,8 +1,8 @@
-html, body {
+html, body, hamburger-box {
   cursor: none; /* This hides the default arrow */
 }
 
-a, button {
+a, button, hamburger-box {
   cursor: none; /* Hides it on links too */
 }
 
