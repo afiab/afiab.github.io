@@ -19,9 +19,9 @@ function SoftEngApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "/public/placeholder.gif",
-            title: "Projects & Experience",
-            subtitle: "Month Year to Month Year",
+            imageUrl: "/images/Softeng-Synop.png",
+            title: "Synop: AI Article Summarizer",
+            subtitle: "MERN, Gemini API, Axios, Cheerio",
             link: "/swe" // The destination URL
         },
         {
@@ -30,16 +30,16 @@ function SoftEngApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "/public/placeholder.gif",
-            title: "Media Campaigns",
-            subtitle: "Month Year to Month Year",
+            imageUrl: "/images/Softeng-Visualizer.png",
+            title: "TD Bank Visualizer",
+            subtitle: "React (ReCharts, PapaParse), Vercel",
             link: "/swe" // The destination URL
         },
         {
             type: "image-overlay",
-            imageUrl: "/public/placeholder.gif",
-            title: "Cases & Solutions",
-            subtitle: "Month Year to Month Year",
+            imageUrl: "/images/Softeng-Cleanup.png",
+            title: "Folder Cleanup",
+            subtitle: "Python (OS, Shutil, Tkinter)",
             link: "/swe" // The destination URL
         }
     ];
