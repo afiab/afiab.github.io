@@ -7,19 +7,11 @@ function ContactApp() {
     const ContactData = [
         {
             type: "title",
-            header: "Contact + Resume",
-        },
-        {
-            type: "paragraph",
-            content: "paragraph explaining this section"
+            header: "Resume",
         },
         {
             type: "iframe",
             link: "public/Afia Bidica Resume.pdf"
-        },
-        {
-            type: "paragraph",
-            content: "Additional paragraph content specific to Contact + Resume..."
         }
     ];
 

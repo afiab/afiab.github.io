@@ -14,7 +14,7 @@ const navConfig = [
     { 
         title: "Contact", 
         links: [
-            { label: "RESUME", path: "/contact" },
+            { label: "RESUME", path: "/resume" },
             {label: "LINKEDIN⤴", path: "https://www.linkedin.com/in/afia-bidica/"},
             {label: "GITHUB⤴", path: "https://github.com/afiab"}
         ] 

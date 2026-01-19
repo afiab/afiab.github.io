@@ -16,9 +16,9 @@
     margin-top: 0;
     margin-bottom: 0;
     /* Aligns with desktop sidebar width */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* max-width: 70vw; */
-    padding: 80px 60px;
+    padding: 50px 60px;
     display: flex;
     justify-content: center;
     /* background-color: #1a151b; */
