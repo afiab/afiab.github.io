@@ -1,3 +1,11 @@
+html, body {
+    cursor: url('images/cursor.png'), auto;
+}
+
+a, button {
+  cursor: url('images/cursor.png'), pointer;
+}
+
 body{
     background-attachment: fixed;
     background-size: cover;
