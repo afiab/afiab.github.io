@@ -71,6 +71,30 @@ const MainContent = ({ sections = [] }) => {
                         );
                     }
 
+                    // If the section is a job experience block
+                    if (section.type === "experience") {
+                        return (
+                            <div key={index} className="experience-block">
+                                <div className="experience-header">
+                                    <div className="experience-titles">
+                                        <h3 className="job-title">{section.jobTitle}</h3>
+                                        <h4 className="company-name">{section.company}</h4>
+                                    </div>
+                                    <div className="experience-date">
+                                        {section.startDate} — {section.endDate}
+                                    </div>
+                                </div>
+                                <ul className="responsibility-list">
+                                    {section.responsibilities.map((item, resIdx) => (
+                                        <li key={resIdx} className="responsibility-item">
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        );
+                    }
+
                     return null;
                 })}
             </div>
