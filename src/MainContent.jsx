@@ -84,6 +84,18 @@ const MainContent = ({ sections = [] }) => {
                                         {section.startDate} — {section.endDate}
                                     </div>
                                 </div>
+
+                                {/* --- New Skills Highlight Section --- */}
+                                {section.skills && (
+                                    <div className="experience-skills">
+                                        {section.skills.map((skill, sIdx) => (
+                                            <span key={sIdx} className="skill-tag">
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                )}
+
                                 <ul className="responsibility-list">
                                     {section.responsibilities.map((item, resIdx) => (
                                         <li key={resIdx} className="responsibility-item">

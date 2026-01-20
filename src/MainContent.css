@@ -36,8 +36,8 @@
     font-weight: 700;
     color: var(--text-title-color);
     /* Assuming the dark theme from your sidebar */
-    margin-bottom: 24px;
-    margin-top: 0px;
+    margin-bottom: 10px;
+    /* margin-top: 0px; */
 }
 
 .header-secondary {
@@ -118,7 +118,7 @@
 }
 
 .experience-block {
-    margin: 40px 0;
+    margin: 20px 0;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(178, 114, 255, 0.1); /* Faint accent color line */
 }
@@ -164,6 +164,31 @@
     color: var(--text-color);
     /* margin-bottom: 8px; */
 }
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 20px 0;
+}
+
+.skill-tag {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: rgba(178, 114, 255, 0.1); /* Subtle purple tint */
+    color: var(--accent-color);
+    border: 1px solid rgba(178, 114, 255, 0.2);
+    transition: all 0.2s ease;
+}
+
+/* .skill-tag:hover {
+    background-color: var(--accent-color);
+    color: #1a151b; 
+} */
 
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
