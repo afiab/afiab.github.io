@@ -7,6 +7,7 @@
     --text-hover-color: #c592e2;
     --section-title-color: #b4a1ba;
     --accent-color: #b272ff;
+    --accent-color-2: #9465c6;
 
 }
 
@@ -133,7 +134,7 @@
 .job-title {
     font-size: 20px;
     font-weight: 700;
-    color: var(--text-hover-color);
+    color: var(--accent-color-2);
     margin: 0;
 }
 

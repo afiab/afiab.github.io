@@ -15,6 +15,23 @@ function SoftEngApp() {
         },
         {
             type: "title",
+            header: "Education",
+        },
+        {
+            type: "experience",
+            jobTitle: "Software Engineering - Bachelor of Science",
+            company: "Rochester Institute of Technology",
+            startDate: "Expected",
+            endDate: "AUG 2027",
+            skills: ["Python", "React", "PostgreSQL", "Flask", "Java", "C++", "JavaScript", "HTML/CSS", "Agile", "Figma"],
+            responsibilities: [
+                "Double Minor in Business Administration and Human Resource Management.",
+                "Tutor and Teaching Assistent for introductory programming courses (Python, Java, C++).",
+                "Relevant Coursework: Software Engineering, Web Engineering, CS Theory, Analysis of Algorithms."
+            ]
+        },
+        {
+            type: "title",
             header: "Experience",
         },
         {
