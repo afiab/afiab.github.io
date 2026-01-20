@@ -1,0 +1,1 @@
+import{j as t,S as r,M as s,c as n,r as a}from"./Sidebar-D-zqSS5l.js";function i(){const e=[{type:"title",header:"Resume"},{type:"iframe",link:"./public/Afia Bidica Resume.pdf"}];return t.jsxs(t.Fragment,{children:[t.jsx(r,{}),t.jsx(s,{sections:e})]})}n.createRoot(document.getElementById("root")).render(t.jsx(a.StrictMode,{children:t.jsx(i,{})}));
