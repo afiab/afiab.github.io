@@ -49,13 +49,25 @@ const Sidebar = ({ sections = navConfig, logoText = "AFIA BIDICA" }) => {
                         <div key={index} className="sidebar-section">
                             {section.title && <h3 className="section-title">{section.title}</h3>}
                             <ul className="section-list">
-                                {section.links.map((link, linkIdx) => (
-                                    <li key={linkIdx} className="section-item">
-                                        <a href={link.path} className="section-link" onClick={() => setIsOpen(false)}>
-                                            {link.label}
-                                        </a>
-                                    </li>
-                                ))}
+                                {section.links.map((link, linkIdx) => {
+                                    // Check if the link is external (starts with http)
+                                    const isExternal = link.path.startsWith('http');
+                                    
+                                    return (
+                                        <li key={linkIdx} className="section-item">
+                                            <a 
+                                                href={link.path} 
+                                                className="section-link" 
+                                                onClick={() => setIsOpen(false)}
+                                                // Conditionally add target and rel
+                                                target={isExternal ? "_blank" : undefined}
+                                                rel={isExternal ? "noopener noreferrer" : undefined}
+                                            >
+                                                {link.label}
+                                            </a>
+                                        </li>
+                                    );
+                                })}
                             </ul>
                         </div>
                     ))}
