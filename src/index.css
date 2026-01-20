@@ -1,0 +1,83 @@
+html, body, hamburger-box {
+  cursor: none; /* This hides the default arrow */
+}
+
+a, button, hamburger-box {
+  cursor: none; /* Hides it on links too */
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--text-hover-color);
+  border-radius: 50%;
+  pointer-events: none; /* Very important: clicks must pass through this */
+  z-index: 9999;
+  
+  /* Use the mouse variables to move the cursor */
+  transform: translate3d(
+    calc(var(--mouse-x) - 10px), 
+    calc(var(--mouse-y) - 10px), 
+    0
+  );
+  
+  /* Smooth out the movement slightly */
+  transition: transform 0.05s linear;
+}
+
+:root {
+  /* 1. Initialize variables with a default position */
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  background-image: 
+    radial-gradient(
+      circle 150px at var(--mouse-x) var(--mouse-y), 
+      rgba(178, 114, 255, 0.15), 
+      transparent 80%
+    ),
+    
+    radial-gradient(at 0% 0%, hsla(273, 100%, 78%, 0.188) 0px, transparent 50%), 
+    radial-gradient(at 100% 100%, hsla(260, 100%, 70%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(280, 50%, 40%, 0.09) 0px, transparent 50%);
+
+  background-color: #1a151b;
+  transition: background 0.3s linear;
+}
+
+body{
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: auto;
+
+    background-color:  #1a151b;
+    background-image: 
+        radial-gradient(at 0% 0%, hsla(273, 100%, 78%, 0.188) 0px, transparent 50%), 
+        radial-gradient(at 100% 100%, hsla(260, 100%, 70%, 0.1) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, hsla(280, 50%, 40%, 0.09) 0px, transparent 50%);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    body{
+        min-height: auto;
+    }
+}
+
+/* If the device is touch-only, ensure the system behavior remains normal */
+@media (pointer: coarse) {
+  html, body {
+    cursor: auto;
+  }
+}

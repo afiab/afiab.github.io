@@ -1,0 +1,241 @@
+:root {
+    --overlay-text-color: #d5c1e3;
+    --overlay-shadow-color: 0 2px 15px rgba(42, 5, 86, 0.988);
+    --sidebar-border-color: #f0f0f0;
+    --text-color: #837489;
+    --text-title-color: #c094cd;
+    --text-hover-color: #c592e2;
+    --section-title-color: #b4a1ba;
+    --accent-color: #b272ff;
+    --accent-color-2: #9465c6;
+
+}
+
+.main-viewport {
+    margin-left: 250px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* Aligns with desktop sidebar width */
+    /* min-height: 100vh; */
+    /* max-width: 70vw; */
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #1a151b; */
+}
+
+.content-container {
+    /* max-width: 60vw; */
+    /* Slightly wider to accommodate the wide image */
+    width: 80%;
+}
+
+/* Standard Typography */
+.header-primary {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-title-color);
+    /* Assuming the dark theme from your sidebar */
+    margin-bottom: 10px;
+    /* margin-top: 0px; */
+}
+
+.header-secondary {
+    font-size: 20px;
+    font-weight: 600;
+    color: #b4a1ba;
+    margin: 40px 0 16px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.paragraph-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #837489;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* --- Wide Image Overlay Div --- */
+.image-overlay-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 20 / 10;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #1a151b;
+    /* Fallback color */
+}
+
+.wide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures image fills the narrow height without squishing */
+    filter: brightness(0.8);
+}
+
+.overlay-text-wrapper {
+    position: absolute;
+    bottom: 30%;
+    /* Adjusted for the shorter height */
+    left: 40px;
+    max-width: 80%;
+    backdrop-filter: blur(1px);
+    border-radius: 15%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.overlay-title {
+    color: var(--overlay-text-color);
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    text-shadow: var(--overlay-shadow-color);
+    /* -webkit-text-stroke: 1px #1b151c; */
+}
+
+.overlay-subtitle {
+    color: var(--overlay-text-color);
+    font-size: 2vw;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: var(--overlay-shadow-color);
+    /* -webkit-text-stroke: 1px #1b151c; */
+}
+
+.image-link-wrapper {
+    text-decoration: none; /* Keeps your text colors exactly as they were */
+    display: block;        /* Ensures the whole box is clickable */
+    width: 100%;
+}
+
+.image-link-wrapper:hover .wide-image {
+    filter: brightness(1); /* Gives a nice visual feedback on hover */
+    transition: filter 0.3s ease;
+}
+
+.experience-block {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(178, 114, 255, 0.1); /* Faint accent color line */
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent-color-2);
+    margin: 0;
+}
+
+.company-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--section-title-color);
+    margin: 4px 0 0 0;
+}
+
+.experience-date {
+    font-size: 14px;
+    font-family: monospace;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.responsibility-list {
+    margin: 0;
+    padding-left: 18px;
+    list-style-type: "→ "; /* Custom minimalist bullet */
+}
+
+.responsibility-item {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-color);
+    /* margin-bottom: 8px; */
+}
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 20px 0;
+}
+
+.skill-tag {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: rgba(178, 114, 255, 0.1); /* Subtle purple tint */
+    color: var(--accent-color);
+    border: 1px solid rgba(178, 114, 255, 0.2);
+    transition: all 0.2s ease;
+}
+
+/* .skill-tag:hover {
+    background-color: var(--accent-color);
+    color: #1a151b; 
+} */
+
+.skills-container.standalone {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 10px 0px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 65vh;
+    border: none;
+    border-radius: 8px;
+    /* margin-top: 20px; */
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .main-viewport {
+        margin-left: 0;
+        padding: 90px 24px 10px 24px;
+        min-height: 50vh;
+    }
+
+    .image-overlay-container {
+        aspect-ratio: 16 / 9;
+        /* Taller aspect ratio for mobile screens */
+    }
+
+    .overlay-title {
+        font-size: 5vw;
+    }
+
+    .overlay-subtitle {
+        font-size: 3vw;
+    }
+
+    .content-container {
+        width: 100%;
+    }
+}
