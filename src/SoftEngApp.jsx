@@ -71,8 +71,9 @@ function SoftEngApp() {
             type: "image-overlay",
             imageUrl: "/images/Softeng-Synop.png",
             title: "Synop: AI Article Summarizer",
-            subtitle: "July 2025",
-            link: "/swe" // The destination URL
+            subtitle: "July 2025 | GitHub Repository ↗",
+            link: "https://github.com/afiab/synop/", // The destination URL
+            external: true
         },
         {
             type: "skills-only",
@@ -88,8 +89,9 @@ function SoftEngApp() {
             type: "image-overlay",
             imageUrl: "/images/Softeng-Visualizer.png",
             title: "TD Bank Visualizer",
-            subtitle: "March 2025",
-            link: "/swe" // The destination URL
+            subtitle: "March 2025 | Github Repository ↗",
+            link: "https://github.com/afiab/TDBankVisualizer", // The destination URL
+            external: true
         },
         {
             type: "skills-only",
@@ -99,14 +101,15 @@ function SoftEngApp() {
         },
         {
             type: "paragraph",
-            content: "A web application that visualizes transaction history from TD Bank. Users can upload their CSV transaction files, and the app generates interactive charts to help them understand their spending habits and financial trends over time."
+            content: "A web application deployed with Vercel that visualizes transaction history from TD Bank. Users can upload their CSV transaction files, and the app generates interactive charts to help them understand their spending habits and financial trends over time."
         },
         {
             type: "image-overlay",
             imageUrl: "/images/Softeng-Cleanup.png",
             title: "Folder Cleanup",
-            subtitle: "May - July 2024",
-            link: "/swe" // The destination URL
+            subtitle: "May - July 2024 | GitHub Repository ↗",
+            link: "https://github.com/afiab/folder-cleanup/", // The destination URL
+            external: true
         },
         {
             type: "skills-only",
@@ -116,7 +119,7 @@ function SoftEngApp() {
         },
         {
             type: "paragraph",
-            content: "An application that facilitates folder management by grouping a folder's contents through backend scripting and a frontend interface."
+            content: "A desktop application that facilitates folder management by grouping a folder's contents through backend scripting and a frontend interface."
         }
     ];
 

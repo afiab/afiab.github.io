@@ -53,7 +53,15 @@ const MainContent = ({ sections = [] }) => {
                     // If the section is an image overlay
                     if (section.type === "image-overlay") {
                         return (
-                            <a key={index} href={section.link} className="image-link-wrapper">
+                            <a 
+                                key={index} 
+                                href={section.link} 
+                                className="image-link-wrapper"
+                                // If external is true, open in new tab, otherwise do nothing
+                                target={section.external ? "_blank" : undefined}
+                                // Security best practice when using target="_blank"
+                                rel={section.external ? "noopener noreferrer" : undefined}
+                            >
                                 <div className="image-overlay-container">
                                     <img src={section.imageUrl} alt={section.title} className="wide-image" />
                                     <div className="overlay-text-wrapper">
