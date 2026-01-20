@@ -74,3 +74,10 @@ body{
         min-height: auto;
     }
 }
+
+/* If the device is touch-only, ensure the system behavior remains normal */
+@media (pointer: coarse) {
+  html, body {
+    cursor: auto;
+  }
+}
