@@ -66,8 +66,7 @@ function BusinessApp() {
             type: "image-overlay",
             imageUrl: "/images/Business-Membership.png",
             title: "COMS Membership Management",
-            subtitle: "December 2023 to Present",
-            link: "/business" // The destination URL
+            subtitle: "December 2023 to Present"
         },
         {
             type: "skills-only",
@@ -77,14 +76,13 @@ function BusinessApp() {
         },
         {
             type: "paragraph",
-            content: "A large part of my role as Secretary involves managing and optimizing the membership database for COMS. By leveraging advanced spreadsheet techniques and Google Apps Script, I have significantly improved the efficiency and accuracy of our membership tracking processes."
+            content: "A large part of my role as Secretary involves managing and optimizing the membership database for COMS. By leveraging advanced spreadsheet techniques and Google Apps Script, I have significantly improved the efficiency and accuracy of our membership tracking processes. The use of spreadsheet formulas has allowed me to manage membership data for 300+ members effectively in a relational database format, enabling quick access and updates, as well as the ability for students to autonomously verify their membership through a web-published front page. Additionally, I developed automated scripts using the built-in Google Apps Script extension to send scheduled communications to members, enhancing transparency and engagement within the organization."
         },
         {
             type: "image-overlay",
             imageUrl: "/images/Business-Secretary.png",
             title: "COMS Secretary Role",
-            subtitle: "December 2023 to Present",
-            link: "/business" // The destination URL
+            subtitle: "December 2023 to Present"
         },
         {
             type: "skills-only",
@@ -94,7 +92,7 @@ function BusinessApp() {
         },
         {
             type: "paragraph",
-            content: "This section highlights various tasks I've undertaken as Secretary, showcasing my leadership and organizational skills in managing communications, founding the alumni network, maintaining essential documents for the organization, and more!"
+            content: "This section highlights various tasks I've undertaken as Secretary, showcasing my leadership and organizational skills in managing communications, founding the alumni network, maintaining essential documents for the organization, and more! To start, I spearheaded the creation of the COMS Alumni Network, which connects former members with current students to foster professional growth and networking opportunities via a private LinkedIn group that I manage as a Content Administrator. I also handle the preparation and organization of over 50 meeting documents and presentations, ensuring that all members have easy access to necessary information. My role involves coordinating with other executive board members to streamline operations and enhance the overall efficiency of the organization. I curated a comprehensive onboarding process for new members, including training sessions and resource materials to facilitate a smooth transition into the organization while reducing onboarding time and information redundancy by over 70%."
         }
     ];
 

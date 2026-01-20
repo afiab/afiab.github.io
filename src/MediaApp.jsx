@@ -75,23 +75,21 @@ function MediaApp() {
             type: "image-overlay",
             imageUrl: "/images/Media_COMS.png",
             title: "COMS Public Relations Graphics",
-            subtitle: "December 2025 to Present",
-            link: "/media" // The destination URL
+            subtitle: "December 2025 to Present"
         },
         {
             type: "paragraph",
-            content: "This is a collection of promotional graphics I have designed for COMS events and meetings using Canva and Adobe Express."
+            content: "This is a collection of promotional graphics I have designed for COMS events and meetings using Canva and Adobe Express. As COMS entered a new semester, I introduced a new futuristic look via the use of gradients and bold fonts to attract more members."
         },
         {
             type: "image-overlay",
             imageUrl: "/images/Media_HACKCOMS.png",
             title: "HACK.COMS Marketing Campaign",
-            subtitle: "March 2025 to November 2025",
-            link: "/swe" // The destination URL
+            subtitle: "March 2025 to November 2025"
         },
         {
             type: "paragraph",
-            content: "These are some of the marketing materials I created to promote HACK.COMS 2025, such as flyers and social media posts, using Canva and Adobe Express."
+            content: "These are some of the marketing materials I created to promote HACK.COMS 2025, such as flyers and social media posts, using Canva and Adobe Express. Since this was an event with a fixed date, I had to plan the marketing campaign months in advance using a Marketing Timeline spreadsheet to ensure maximum reach and engagement. Graphics were designed to be simple, minimalistic, and have consistent colorful branding to attract a wide audience."
         }
     ];
 
