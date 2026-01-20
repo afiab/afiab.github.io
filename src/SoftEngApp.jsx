@@ -86,7 +86,7 @@ function SoftEngApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "/images/Softeng-Synop.png",
+            imageUrl: "./public/Softeng-Synop.png",
             title: "Synop: AI Article Summarizer",
             subtitle: "July 2025 | GitHub Repository ↗",
             link: "https://github.com/afiab/synop/", // The destination URL
@@ -104,7 +104,7 @@ function SoftEngApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "/images/Softeng-Visualizer.png",
+            imageUrl: "./public/Softeng-Visualizer.png",
             title: "TD Bank Visualizer",
             subtitle: "March 2025 | Github Repository ↗",
             link: "https://github.com/afiab/TDBankVisualizer", // The destination URL
@@ -122,7 +122,7 @@ function SoftEngApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "/images/Softeng-Cleanup.png",
+            imageUrl: "./public/Softeng-Cleanup.png",
             title: "Folder Cleanup",
             subtitle: "May - July 2024 | GitHub Repository ↗",
             link: "https://github.com/afiab/folder-cleanup/", // The destination URL

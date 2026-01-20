@@ -1,7 +1,20 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
+  // Ensure your base path is correct for GH Pages
+  base: '/YOUR_REPOSITORY_NAME/', 
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        softeng: resolve(__dirname, 'softeng.html'), // Add your actual filenames here
+        media: resolve(__dirname, 'media.html'),
+        business: resolve(__dirname, 'business.html'),
+        resume: resolve(__dirname, 'resume.html'),
+      },
+    },
+  },
 })

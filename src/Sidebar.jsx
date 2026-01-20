@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import './Sidebar.css';
 
 const navConfig = [
-    { title: "", links: [{ label: "HOME", path: "/index" }] },
+    { title: "", links: [{ label: "HOME", path: "./index" }] },
     {
         title: "Fields",
         links: [
-            { label: "SOFTWARE ENGINEERING", path: "/softeng" },
-            { label: "GRAPHIC MEDIA DESIGN", path: "/media" },
-            { label: "BUSINESS OPS + HR", path: "/business" }
+            { label: "SOFTWARE ENGINEERING", path: "./softeng" },
+            { label: "GRAPHIC MEDIA DESIGN", path: "./media" },
+            { label: "BUSINESS OPS + HR", path: "./business" }
         ]
     },
     { 
         title: "Contact", 
         links: [
-            { label: "RESUME", path: "/resume" },
+            { label: "RESUME", path: "./resume" },
             {label: "LINKEDIN↗", path: "https://www.linkedin.com/in/afia-bidica/"},
             {label: "GITHUB↗", path: "https://github.com/afiab"}
         ] 

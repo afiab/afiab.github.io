@@ -11,7 +11,7 @@ function ContactApp() {
         },
         {
             type: "iframe",
-            link: "public/Afia Bidica Resume.pdf"
+            link: "./public/Afia Bidica Resume.pdf"
         }
     ];
 

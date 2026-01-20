@@ -20,10 +20,10 @@ function App() {
     },
     {
       type: "image-overlay",
-      imageUrl: "images/Home-Softeng.png",
+      imageUrl: "./public/Home-Softeng.png",
       title: "Projects & Experience",
       subtitle: "View My Software Engineering Work",
-      link: "/softeng" // The destination URL
+      link: "./softeng" // The destination URL
     },
     {
       type: "text",
@@ -32,10 +32,10 @@ function App() {
     },
     {
       type: "image-overlay",
-      imageUrl: "images/Home-Media.png",
+      imageUrl: "./public/Home-Media.png",
       title: "Media Campaigns",
       subtitle: "View My Graphic Media Design Work",
-      link: "/media" // The destination URL
+      link: "./media" // The destination URL
     },
     {
       type: "text",
@@ -44,10 +44,10 @@ function App() {
     },
     {
       type: "image-overlay",
-      imageUrl: "/images/Home-Business.png",
+      imageUrl: "./public/Home-Business.png",
       title: "Cases & Solutions",
       subtitle: "Real-World Business Operations",
-      link: "/business" // The destination URL
+      link: "./business" // The destination URL
     }
 ];
 
