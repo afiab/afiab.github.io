@@ -107,6 +107,19 @@ const MainContent = ({ sections = [] }) => {
                         );
                     }
 
+                    // If the section is ONLY a skills cloud (no header)
+                    if (section.type === "skills-only") {
+                        return (
+                            <div key={index} className="skills-container standalone">
+                                {section.skills.map((skill, sIdx) => (
+                                    <span key={sIdx} className="skill-tag large">
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+                        );
+                    }
+
                     return null;
                 })}
             </div>

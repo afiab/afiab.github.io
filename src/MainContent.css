@@ -190,6 +190,16 @@
     color: #1a151b; 
 } */
 
+.skills-container.standalone {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
     .experience-header {
