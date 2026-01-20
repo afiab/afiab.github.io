@@ -59,6 +59,10 @@ function BusinessApp() {
             ]
         },
         {
+            type: "title",
+            header: "Projects",
+        },
+        {
             type: "image-overlay",
             imageUrl: "/images/Business-Membership.png",
             title: "COMS Membership Management",
