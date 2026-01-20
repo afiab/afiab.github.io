@@ -7,16 +7,16 @@ function App() {
   const projectData = [
     {
       type: "title",
-      header: "WELCOME TO MY PORTFOLIO"
+      header: "Welcome to My Portfolio",
     },
     {
       type: "paragraph",
-      content: "(placeholder cuz im too lazy to write an intro right now)"
+      content: "I'm a Software Engineering major with a passion for creating practical digital solutions. Explore my work across software development, graphic media design, and business operations."
     },
     {
       type: "text",
       header: "Software Engineering",
-      content: "blah blah lorem ipsum dolor sit amet place holder text..."
+      content: "Learn more about my education, projects and experience in software engineering"
     },
     {
       type: "image-overlay",
@@ -28,7 +28,7 @@ function App() {
     {
       type: "text",
       header: "Graphic Design",
-      content: "blah blah lorem ipsum dolor sit amet place holder text..."
+      content: "I create graphics for social media marketing campaigns, branding, and more."
     },
     {
       type: "image-overlay",
@@ -40,7 +40,7 @@ function App() {
     {
       type: "text",
       header: "Business Operations + HR",
-      content: "blah blah lorem ipsum dolor sit amet place holder text..."
+      content: "With my double minor in Business Operations and Human Resources, I bring a unique perspective to real-world business challenges. View some of my solutions below."
     },
     {
       type: "image-overlay",
