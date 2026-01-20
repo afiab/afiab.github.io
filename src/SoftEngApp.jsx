@@ -86,7 +86,7 @@ function SoftEngApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "./public/Softeng-Synop.png",
+            imageUrl: "./images/Softeng-Synop.png",
             title: "Synop: AI Article Summarizer",
             subtitle: "July 2025 | GitHub Repository ↗",
             link: "https://github.com/afiab/synop/", // The destination URL
