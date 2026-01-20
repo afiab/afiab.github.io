@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   // Ensure your base path is correct for GH Pages
-  base: '/afiab.github.io/', 
+  base: '/', 
   plugins: [react()],
   build: {
     rollupOptions: {
