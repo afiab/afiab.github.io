@@ -64,7 +64,7 @@ function BusinessApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "./public/Business-Membership.png",
+            imageUrl: "./images/Business-Membership.png",
             title: "COMS Membership Management",
             subtitle: "December 2023 to Present"
         },
@@ -80,7 +80,7 @@ function BusinessApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "./public/Business-Secretary.png",
+            imageUrl: "./images/Business-Secretary.png",
             title: "COMS Secretary Role",
             subtitle: "December 2023 to Present"
         },

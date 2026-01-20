@@ -20,7 +20,7 @@ function App() {
     },
     {
       type: "image-overlay",
-      imageUrl: "./public/Home-Softeng.png",
+      imageUrl: "./images/Home-Softeng.png",
       title: "Projects & Experience",
       subtitle: "View My Software Engineering Work",
       link: "./softeng" // The destination URL
@@ -32,7 +32,7 @@ function App() {
     },
     {
       type: "image-overlay",
-      imageUrl: "./public/Home-Media.png",
+      imageUrl: "./images/Home-Media.png",
       title: "Media Campaigns",
       subtitle: "View My Graphic Media Design Work",
       link: "./media" // The destination URL
@@ -44,7 +44,7 @@ function App() {
     },
     {
       type: "image-overlay",
-      imageUrl: "./public/Home-Business.png",
+      imageUrl: "./images/Home-Business.png",
       title: "Cases & Solutions",
       subtitle: "Real-World Business Operations",
       link: "./business" // The destination URL

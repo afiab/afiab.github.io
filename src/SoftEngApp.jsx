@@ -104,7 +104,7 @@ function SoftEngApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "./public/Softeng-Visualizer.png",
+            imageUrl: "./images/Softeng-Visualizer.png",
             title: "TD Bank Visualizer",
             subtitle: "March 2025 | Github Repository ↗",
             link: "https://github.com/afiab/TDBankVisualizer", // The destination URL
@@ -122,7 +122,7 @@ function SoftEngApp() {
         },
         {
             type: "image-overlay",
-            imageUrl: "./public/Softeng-Cleanup.png",
+            imageUrl: "./images/Softeng-Cleanup.png",
             title: "Folder Cleanup",
             subtitle: "May - July 2024 | GitHub Repository ↗",
             link: "https://github.com/afiab/folder-cleanup/", // The destination URL
