@@ -76,7 +76,7 @@ function MediaApp() {
             imageUrl: "./images/Media_COMS.png",
             link: "./comspr.html",
             title: "COMS Public Relations Graphics",
-            subtitle: "December 2025 to Present"
+            subtitle: "December 2025 to Present | View Works »"
         },
         {
             type: "paragraph",
@@ -85,8 +85,9 @@ function MediaApp() {
         {
             type: "image-overlay",
             imageUrl: "./images/Media_HACKCOMS.png",
+            link: "./hackcomspr.html",
             title: "HACK.COMS Marketing Campaign",
-            subtitle: "March 2025 to November 2025"
+            subtitle: "March 2025 to November 2025 | View Works »"
         },
         {
             type: "paragraph",
