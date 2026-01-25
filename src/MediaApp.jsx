@@ -74,6 +74,7 @@ function MediaApp() {
         {
             type: "image-overlay",
             imageUrl: "./images/Media_COMS.png",
+            link: "./comspr.html",
             title: "COMS Public Relations Graphics",
             subtitle: "December 2025 to Present"
         },

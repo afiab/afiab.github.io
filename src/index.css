@@ -17,6 +17,73 @@ body {
     margin: 0;
 }
 
+/* --- GALLERY SYSTEM --- */
+
+.gallery-container {
+  width: 100%;
+  max-width: 100%; 
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Base style for images within the grid */
+.gallery-image {
+  /* Default for multiple images: 3 per row on desktop */
+  flex: 0 0 calc(50% - 8px); 
+  max-width: calc(50% - 8px);
+  /* aspect-ratio: 1 / 1;  */
+  object-fit: cover;   
+  border-radius: 8px;
+  /* background: rgba(255, 255, 255, 0.05); */
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+}
+
+/* SINGLE IMAGE OVERRIDE: 
+   If the image is the only child, make it span the full width */
+.gallery-image:only-child {
+  flex: 0 0 100%;
+  max-width: 100%;
+  aspect-ratio: auto; /* Allow the image to keep its natural proportions */
+  max-height: 600px;  /* Prevent it from becoming too tall */
+  object-fit: contain; /* Ensure the whole design is visible */
+}
+
+/* Mobile: 2 per row for multiple images */
+@media (max-width: 768px) {
+  .gallery-image {
+    flex: 0 0 calc(50% - 8px); 
+    max-width: calc(50% - 8px);
+  }
+
+  /* Ensure single image stays full width on mobile too */
+  .gallery-image:only-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.gallery-caption {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #b3a1b9; 
+  text-align: left;
+  border-left: 2px solid #b272ff; 
+  padding-left: 10px;
+}
+
 /* 3. MOUSE-ONLY EFFECTS (Desktop) */
 @media (pointer: fine) {
   /* Hide system cursor only on desktop */
