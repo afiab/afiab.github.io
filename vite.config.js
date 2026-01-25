@@ -14,6 +14,8 @@ export default defineConfig({
         media: resolve(__dirname, 'media.html'),
         business: resolve(__dirname, 'business.html'),
         resume: resolve(__dirname, 'resume.html'),
+        comspr: resolve(__dirname, 'comspr.html'),
+        hackcomspr: resolve(__dirname, 'hackcomspr.html'),
       },
     },
   },
