@@ -59,6 +59,17 @@ function BusinessApp() {
             ]
         },
         {
+            type: "experience",
+            jobTitle: "Alfred L. & Ruby C. Davis Leadership Award Recipient",
+            company: "Center for Leadership and Civic Engagement Community Impact Awards",
+            startDate: "APR",
+            endDate: "APR 2024",
+            skills: ["Leadership"],
+            responsibilities: [
+                "Awarded to students who have demonstrated significant effort toward the improvement and quality of campus."
+            ]
+        },
+        {
             type: "title",
             header: "Projects",
         },
