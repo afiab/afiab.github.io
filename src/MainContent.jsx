@@ -73,6 +73,26 @@ const MainContent = ({ sections = [] }) => {
                         );
                     }
 
+                    // Inside your section mapping in MainContent.jsx
+                    if (section.type === "image-gallery") {
+                        const isGrid = section.imageUrls.length > 1;
+                        return (
+                            <div key={index} className="gallery-container">
+                            <div className={`gallery-grid ${isGrid ? 'force-grid' : 'single-image'}`}>
+                                {section.imageUrls.map((url, i) => (
+                                <img 
+                                    key={i} 
+                                    src={url} 
+                                    alt={`Design project ${i}`} 
+                                    className="gallery-image" 
+                                />
+                                ))}
+                            </div>
+                            {section.caption && <p className="gallery-caption">{section.caption}</p>}
+                            </div>
+                        );
+                    }
+
                     if (section.type === "iframe") {
                         return (
                             <iframe src={section.link} width="100%" height="600px" frameborder="0"></iframe>
