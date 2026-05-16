@@ -21,7 +21,6 @@ function SoftEngApp() {
             type: "experience",
             jobTitle: "Software Engineering - Bachelor of Science",
             company: "Rochester Institute of Technology",
-            startDate: "Expected",
             endDate: "AUG 2027",
             skills: ["Python", "React", "PostgreSQL", "Flask", "Java", "C++", "JavaScript", "HTML/CSS", "Agile", "Figma"],
             responsibilities: [
@@ -36,18 +35,30 @@ function SoftEngApp() {
         },
         {
             type: "experience",
-            jobTitle: "TechStart Intern - Incoming",
-            company: "Liberty Mutual",
+            jobTitle: "Software Engineering Co-op",
+            company: "Safran Trusted 4D",
+            startDate: "AUG 2026",
+            endDate: "DEC 2026",
+            skills: ["React","JavaScript","Golang", "VictoriaMetrics", "Prometheus","Timing Synchronization (NTP, PTP, White Rabbit)"],
+            responsibilities: [
+                "Incoming Software Engineering Co-op for Fall 2026 with a focus on firmware and embedded software.",
+            ]
+        },
+        {
+            type: "experience",
+            jobTitle: "TechStart Intern (Full Stack Software Engineer)",
+            company: "Liberty Mutual Insurance",
             startDate: "JUN 2026",
             endDate: "AUG 2026",
+            skills: ["React","TypeScript","AWS Lambda"],
             responsibilities: [
-                "Incoming Summer 2026 TechStart Intern at Liberty Mutual.",
+                "Summer 2026 TechStart Intern at Liberty Mutual. Working as a Full Stack Software Engineering intern.",
             ]
         },
         {
             type: "experience",
             jobTitle: "Software Engineering Co-op",
-            company: "Rochester Institute of Technology",
+            company: "Rochester Institute of Technology: Golisano College of Computing and Information Sciences",
             startDate: "JAN 2026",
             endDate: "MAY 2026",
             skills: ["React", "TypeScript", "Polaris", "Shopify", "API", "Agile", "GraphQL", "AWS", "Documentation"],
