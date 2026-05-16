@@ -10,6 +10,13 @@ function COMSPRApp() {
             header: "COMS Public Relations Design",
         },
         {
+            type: "image-overlay",
+            imageUrl: "./images/COMSPR/comsinsta.png",
+            link: "https://www.instagram.com/rit_coms/",
+            title: "COMS Instagram",
+            subtitle: "December 2025 - Present | View Page ↗"
+        },
+        {
             type: "paragraph",
             content: "Prior to this role, I was involved in COMS for 2 years. I wanted to reflect how much the organization has grown and evolved over time through a fresh new brand identity. Below are some of the design elements I created to establish a cohesive and modern look for COMS' public relations materials. I focused on using gradients inspired by Neo-Frutiger to give a futuristic and tech-savvy vibe, while also ensuring that the colors were vibrant and eye-catching to attract new members. I also leaned towards sans serif fonts to maintain a modern tech aesthetic."
         },
