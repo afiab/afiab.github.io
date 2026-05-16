@@ -76,7 +76,6 @@ function SoftEngApp() {
             type: "experience",
             jobTitle: "Software Engineer - MESH Extern",
             company: "FactSet Research Systems",
-            startDate: "MAY",
             endDate: "MAY 2025",
             skills: ["Streamlit", "Python", "API", "Agile"],
             responsibilities: [
