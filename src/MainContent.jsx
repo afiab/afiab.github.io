@@ -152,6 +152,16 @@ const MainContent = ({ sections = [] }) => {
                         );
                     }
 
+                    if (section.type === "html") {
+                        return (
+                            <div 
+                                key={index} 
+                                className="custom-html-block"
+                                dangerouslySetInnerHTML={{ __html: section.htmlCode }}
+                            />
+                        );
+                    }
+
                     return null;
                 })}
             </div>
