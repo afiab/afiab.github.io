@@ -38,7 +38,7 @@ function SoftEngApp() {
             type: "experience",
             jobTitle: "TechStart Intern - Incoming",
             company: "Liberty Mutual",
-            startDate: "MAY 2026",
+            startDate: "JUN 2026",
             endDate: "AUG 2026",
             responsibilities: [
                 "Incoming Summer 2026 TechStart Intern at Liberty Mutual.",
@@ -49,9 +49,16 @@ function SoftEngApp() {
             jobTitle: "Software Engineering Co-op",
             company: "Rochester Institute of Technology",
             startDate: "JAN 2026",
-            endDate: "PRESENT",
+            endDate: "MAY 2026",
+            skills: ["React", "TypeScript", "Polaris", "Shopify", "API", "Agile", "GraphQL", "AWS", "Documentation"],
             responsibilities: [
-                "Spring 2026 Semester Co-op. More details coming soon!",
+                "Spring 2026 Semester Co-op.",
+                "Optimized homepage performance by refactoring the index route to fetch revenue data asynchronously via API post-mount; introduced a fluid loading state that eliminated server loader bottlenecks and prevented UI blocking.",
+                "Refactored 1,000+ lines of code to strictly adhere to DRY principles, extracting 100+ hardcoded values into centralized constants to improve codebase maintainability and readability.",
+                "Elevated homepage UI/UX by implementing Shopify Polaris components using React and TypeScript, resulting in a seamless user journey and improved interface responsiveness.",
+                "Expanded test coverage by designing and executing comprehensive UI test cases for critical user paths, including onboarding, analytics, and subscription management pages.",
+                "Architected comprehensive repository documentation, authoring 9 detailed user guides and a complete root README covering system architecture, AWS authorization, environment configuration, and local deployment to streamline developer onboarding.",
+                "Enhanced team operational efficiency by automating metrics in internal tracking systems and optimizing the SUMI Feedback Form to accelerate response collection from beta testers."
             ]
         },
         {
