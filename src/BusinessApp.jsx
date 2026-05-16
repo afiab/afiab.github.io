@@ -21,7 +21,6 @@ function BusinessApp() {
             type: "experience",
             jobTitle: "B.S. Software Engineering, Business Admin. & HR Minors",
             company: "Rochester Institute of Technology",
-            startDate: "Expected",
             endDate: "AUG 2027",
             skills: ["HR Programs", "Job Analysis", "Training & Development", "Business Ethics", "Organizational Behavior", "Spreadsheets", "Presentations", "Public Speaking"],
             responsibilities: [
@@ -33,7 +32,6 @@ function BusinessApp() {
             type: "experience",
             jobTitle: "Microsoft Office Specialist - Associate (Office 2019)",
             company: "Microsoft",
-            startDate: "AUG 2022",
             endDate: "AUG 2022",
             skills: ["Microsoft Office", "Excel", "PowerPoint", "Word"],
             responsibilities: [
@@ -49,7 +47,7 @@ function BusinessApp() {
             jobTitle: "Secretary (Eboard Position)",
             company: "Computing Organization for Multicultural Students (COMS) at RIT",
             startDate: "DEC 2023",
-            endDate: "Present",
+            endDate: "MAY 2026",
             skills: ["Leadership", "Database Administration", "Spreadsheets", "Google Apps Script", "JavaScript"],
             responsibilities: [
                 "Optimize data parsing for 300+ members using advanced formulas, filters, and database management skills in Excel and Spreadsheets, resulting in 175% efficiency in membership tracking and operations.",
@@ -60,9 +58,28 @@ function BusinessApp() {
         },
         {
             type: "experience",
+            jobTitle: "RIT Memorial Fund Award",
+            company: "Center for Leadership and Civic Engagement Community Impact Awards",
+            endDate: "APR 2026",
+            skills: ["Leadership"],
+            responsibilities: [
+                "1 of 2 recipients awarded for demonstrated leadership in student groups and/or community activities."
+            ]
+        },
+        {
+            type: "experience",
+            jobTitle: "Momentum II",
+            company: "RIT Center for Leadership and Civic Engagement",
+            endDate: "NOV 2025",
+            skills: ["Leadership"],
+            responsibilities: [
+                "Leadership development program that serves as an opportunity for student leaders to further hone the skills needed to be better leaders in their club, team, or classroom.",
+            ]
+        },
+        {
+            type: "experience",
             jobTitle: "Alfred L. & Ruby C. Davis Leadership Award Recipient",
             company: "Center for Leadership and Civic Engagement Community Impact Awards",
-            startDate: "APR",
             endDate: "APR 2024",
             skills: ["Leadership"],
             responsibilities: [
@@ -77,7 +94,7 @@ function BusinessApp() {
             type: "image-overlay",
             imageUrl: "./images/Business-Membership.png",
             title: "COMS Membership Management",
-            subtitle: "December 2023 to Present"
+            subtitle: "December 2023 to May 2026"
         },
         {
             type: "skills-only",
@@ -93,7 +110,7 @@ function BusinessApp() {
             type: "image-overlay",
             imageUrl: "./images/Business-Secretary.png",
             title: "COMS Secretary Role",
-            subtitle: "December 2023 to Present"
+            subtitle: "December 2023 to May 2026"
         },
         {
             type: "skills-only",
