@@ -109,7 +109,11 @@ const MainContent = ({ sections = [] }) => {
                                         <h4 className="company-name">{section.company}</h4>
                                     </div>
                                     <div className="experience-date">
-                                        {section.startDate} — {section.endDate}
+                                        {section.startDate && section.endDate ? (
+                                            `${section.startDate} — ${section.endDate}`
+                                        ) : (
+                                            section.startDate || section.endDate
+                                        )}
                                     </div>
                                 </div>
 
@@ -145,6 +149,16 @@ const MainContent = ({ sections = [] }) => {
                                     </span>
                                 ))}
                             </div>
+                        );
+                    }
+
+                    if (section.type === "html") {
+                        return (
+                            <div 
+                                key={index} 
+                                className="custom-html-block"
+                                dangerouslySetInnerHTML={{ __html: section.htmlCode }}
+                            />
                         );
                     }
 

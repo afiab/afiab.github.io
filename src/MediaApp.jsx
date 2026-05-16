@@ -21,7 +21,6 @@ function MediaApp() {
             type: "experience",
             jobTitle: "Professional Certificate - Introduction to Graphic Design",
             company: "LCI Education - edX",
-            startDate: "JAN",
             endDate: "JAN 2026",
             skills: ["Project Presentation", "Design", "Color Theory", "Mock-Ups", "Vectors", "Adobe"],
             responsibilities: [
@@ -43,25 +42,27 @@ function MediaApp() {
         },
         {
             type: "experience",
-            jobTitle: "Public Relations Graphic Designer",
+            jobTitle: "Public Relations Chair",
             company: "Computing Organization for Multicultural Students (COMS) at RIT",
             startDate: "DEC 2025",
-            endDate: "PRESENT",
-            skills: ["Canva Pro", "Design", "Marketing", "PR Timeline", "Instagram", "Adobe Express"],
+            endDate: "May 2027",
+            skills: ["Canva Pro", "Graphics", "Design", "Marketing", "PR Timeline", "Instagram", "Adobe Express"],
             responsibilities: [
-                "Design engaging promotional banners and Instagram Graphics for upcoming meetings and events weekly using Canva",
-                "Manage Instagram page for the organization, posting regular updates and event promotions to increase member engagement"
+                "Spearheaded a comprehensive digital brand transformation, shifting content strategy toward a sleek, cohesive visual aesthetic that drove a massive traffic surge to over 125K+ total views within 90 days.",
+                "Engineered a viral content strategy that boosted rolling 90-day post views to 67K+ (over 60 times increase from the previous baseline of <1K weekly views) and generated a record-breaking top reel with 5.7K+ individual views.",
+                "Designed and produced high-performing multimedia assets and Reels using bold typography, structured grids, and source-code-inspired styling to increase the follower base by over 150 active followers in under 6 months.",
+                "Optimized user acquisition funnels by translating high-visibility social media impressions into actionable engagement, resulting in hundreds of weekly profile visits and increased campus-wide organizational visibility."
             ]
         },
         {
             type: "experience",
-            jobTitle: "HACK.COMS 2025 Marketing Director",
+            jobTitle: "HACK.COMS Marketing Director",
             company: "Computing Organization for Multicultural Students (COMS) at RIT",
-            startDate: "FEB",
-            endDate: "NOV 2025",
+            startDate: "2025",
+            endDate: "26",
             skills: ["Canva Pro", "Design", "Marketing", "PR Timeline", "Instagram", "Adobe Express"],
             responsibilities: [
-                "Responsible for the creation of all advertising and promotional materials for HACK.COMS, whose mission is to uplift diverse and underrepresented students in computing.",
+                "Responsible for the creation of all advertising and promotional materials for HACK.COMS 2025 and 2026, whose mission is to uplift diverse and underrepresented students in computing.",
                 "Created a Marketing Release schedule 5 months in advance, detailing content creation logistics for over 40+ pieces of promotional materials using table-views in spreadsheets, with the goal of growing audience exposure and engagement through marketing strategy and tracking.",
                 "Curated engaging content with consistent branding through Canva, with custom-tailored graphics designed with Krita desktop software.",
                 "Tailored a Prospectus Report with captivating charts and data visualizations regarding context and impact from previous iterations of HACK.COMS."

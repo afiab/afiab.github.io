@@ -21,7 +21,6 @@ function SoftEngApp() {
             type: "experience",
             jobTitle: "Software Engineering - Bachelor of Science",
             company: "Rochester Institute of Technology",
-            startDate: "Expected",
             endDate: "AUG 2027",
             skills: ["Python", "React", "PostgreSQL", "Flask", "Java", "C++", "JavaScript", "HTML/CSS", "Agile", "Figma"],
             responsibilities: [
@@ -36,29 +35,47 @@ function SoftEngApp() {
         },
         {
             type: "experience",
-            jobTitle: "TechStart Intern - Incoming",
-            company: "Liberty Mutual",
-            startDate: "MAY 2026",
-            endDate: "AUG 2026",
+            jobTitle: "Software Engineering Co-op",
+            company: "Safran Trusted 4D",
+            startDate: "AUG 2026",
+            endDate: "DEC 2026",
+            skills: ["React","JavaScript","Golang", "VictoriaMetrics", "Prometheus","Timing Synchronization (NTP, PTP, White Rabbit)"],
             responsibilities: [
-                "Incoming Summer 2026 TechStart Intern at Liberty Mutual.",
+                "Incoming Software Engineering Co-op for Fall 2026 with a focus on firmware and embedded software.",
+            ]
+        },
+        {
+            type: "experience",
+            jobTitle: "TechStart Intern (Full Stack Software Engineer)",
+            company: "Liberty Mutual Insurance",
+            startDate: "JUN 2026",
+            endDate: "AUG 2026",
+            skills: ["React","TypeScript","AWS Lambda"],
+            responsibilities: [
+                "Summer 2026 TechStart Intern at Liberty Mutual. Working as a Full Stack Software Engineering intern.",
             ]
         },
         {
             type: "experience",
             jobTitle: "Software Engineering Co-op",
-            company: "Rochester Institute of Technology",
+            company: "Rochester Institute of Technology: Golisano College of Computing and Information Sciences",
             startDate: "JAN 2026",
-            endDate: "PRESENT",
+            endDate: "MAY 2026",
+            skills: ["React", "TypeScript", "Polaris", "Shopify", "API", "Agile", "GraphQL", "AWS", "Documentation"],
             responsibilities: [
-                "Spring 2026 Semester Co-op. More details coming soon!",
+                "Spring 2026 Semester Co-op.",
+                "Optimized homepage performance by refactoring the index route to fetch revenue data asynchronously via API post-mount; introduced a fluid loading state that eliminated server loader bottlenecks and prevented UI blocking.",
+                "Refactored 1,000+ lines of code to strictly adhere to DRY principles, extracting 100+ hardcoded values into centralized constants to improve codebase maintainability and readability.",
+                "Elevated homepage UI/UX by implementing Shopify Polaris components using React and TypeScript, resulting in a seamless user journey and improved interface responsiveness.",
+                "Expanded test coverage by designing and executing comprehensive UI test cases for critical user paths, including onboarding, analytics, and subscription management pages.",
+                "Architected comprehensive repository documentation, authoring 9 detailed user guides and a complete root README covering system architecture, AWS authorization, environment configuration, and local deployment to streamline developer onboarding.",
+                "Enhanced team operational efficiency by automating metrics in internal tracking systems and optimizing the SUMI Feedback Form to accelerate response collection from beta testers."
             ]
         },
         {
             type: "experience",
             jobTitle: "Software Engineer - MESH Extern",
             company: "FactSet Research Systems",
-            startDate: "MAY",
             endDate: "MAY 2025",
             skills: ["Streamlit", "Python", "API", "Agile"],
             responsibilities: [

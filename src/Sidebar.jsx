@@ -15,7 +15,7 @@ const navConfig = [
         title: "Contact", 
         links: [
             { label: "RESUME↗", path: "https://flowcv.com/resume/1877ll3vmb" },
-            {label: "LINKEDIN↗", path: "https://www.linkedin.com/in/afia-bidica/"},
+            {label: "LINKEDIN↗", path: "https://www.linkedin.com/in/afiabidica/"},
             {label: "GITHUB↗", path: "https://github.com/afiab"}
         ] 
     }
